@@ -6,6 +6,12 @@ refereed journal publications by members of the IRyA, organized by
 year from 2003 to the present.  Also creates the web page
 latest_publication.php with the most recent paper.
 
+Usage:
+
+    make-irya-publication-list.py OUTPUT_FOLDER
+
+Files will be written to OUTPUT_FOLDER
+
 Authors: Will Henney and Jane Arthur, 2022
 """
 
@@ -22,6 +28,11 @@ import ads
 
 PUB_LIST_FILE = "publication_list2.php"
 LATEST_PUB_FILE = "latest_publication2.php"
+
+try:
+    OUTPUT_FOLDER = sys.argv[1]
+except IndexError:
+    sys.exit(f"Usage: {sys.argv[0]} OUTPUT_FOLDER")
 
 start_year = 2003
 this_year = datetime.date.today().year
@@ -235,8 +246,8 @@ pub_list_page += """\
 """
 
 # Write out the two files
-with open(PUB_LIST_FILE, "w") as f:
+with open(f"{OUTPUT_FOLDER}/{PUB_LIST_FILE}", "w") as f:
     f.write(pub_list_page)
 
-with open(LATEST_PUB_FILE, "w") as f:
+with open(f"{OUTPUT_FOLDER}/{LATEST_PUB_FILE}", "w") as f:
     f.write(latest_pub_page)
