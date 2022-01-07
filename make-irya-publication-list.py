@@ -1,3 +1,14 @@
+"""
+make-irya-publication-list.py
+
+Creates the web page publication_list.php, which contains lists of
+refereed journal publications by members of the IRyA, organized by
+year from 2003 to the present.  Also creates the web page
+latest_publication.php with the most recent paper.
+
+Authors: Will Henney and Jane Arthur, 2022
+"""
+
 import ads
 import sys
 import json
@@ -7,13 +18,9 @@ from textwrap import dedent
 start_year = 2003
 this_year = datetime.date.today().year
 
-# try:
-#     start_year = int(sys.argv[1])
-# except:
-#     sys.exit(f"Usage {sys.argv[0]} START_YEAR")
-
 years = list(reversed(range(start_year, this_year + 1)))
 
+# We look for these different variants of the institute name
 irya_variants = [
     "CRyA",
     "IRyA",
@@ -22,6 +29,7 @@ irya_variants = [
 ]
 affstring = "(" + " OR ".join([f'"{_}"' for _ in irya_variants]) + ")"
 
+# To eliminate false positives in Italy, we have an auxiliary check on UNAM or Morelia
 unam_variants = [
     '"UNAM"',
     '("Universidad" AND "México")',
@@ -31,7 +39,7 @@ unam_variants = [
 affstring2 = "(" + " OR ".join(unam_variants) + ")"
 
 
-#
+# These are the fields that we want the ADS query to give us
 fields = [
     "id",
     "bibcode",
@@ -47,6 +55,10 @@ fields = [
 
 
 def mark_irya_affiliations(paper):
+    """Highlight authors with IRyA affiliation
+
+    This mutates the paper.author list, so should be called only once
+    """
     for i, [author, affil] in enumerate(zip(paper.author, paper.aff)):
         for variant in irya_variants:
             if variant in affil:
@@ -55,6 +67,10 @@ def mark_irya_affiliations(paper):
 
 
 def make_author_list(paper, nmax=20):
+    """Format list of authors but hide full list if very long
+
+    Adds javascript toggle button to show full list
+    """
     if len(paper.author) <= nmax:
         return "; ".join(paper.author)
     else:
@@ -73,6 +89,10 @@ def make_author_list(paper, nmax=20):
 
 
 def format_paper(paper):
+    """Make an html list item for a single paper
+
+    Paper title is link to ADS page, followed by author list, date, journal, volume, page
+    """
     bibcode_link = dedent(
         f"""\
         <a href="https://ui.adsabs.harvard.edu/abs/{paper.bibcode}" target="_blank">
@@ -90,6 +110,8 @@ def format_paper(paper):
     return rslt
 
 
+# This javascript header goes at top of the files.  We believe it was
+# written by Vicente Rodríguez
 script_header = """\
 <script>
 function toggleAuthors(bibcode, numAuthors, longList) {
@@ -118,6 +140,7 @@ pub_list_page += """\
 <div class="row-fluid">
 """
 
+# Make navigation sidebar with links for each year
 pub_list_page += """\
 <div id="sidebar" class="span1">
 <ul class="nav nav-pills nav-stacked mod-list">
@@ -129,19 +152,20 @@ for year in years:
         + "\n"
     )
 
+# End navigation sidebar
 pub_list_page += """\
 </ul>
 </div>
 """
 
-
+# Start div with the main content
 pub_list_page += """\
 <div class="tab-content span11">
 """
 
-# Make a separate ADS query for each year
 for year in years:
     tab_pane = "tab-pane active" if year == this_year else "tab-pane"
+    # Make a single ADS query for each year
     papers = list(
         ads.SearchQuery(
             q=f"aff:{affstring}",
@@ -154,6 +178,8 @@ for year in years:
     )
     # Remove MNRAS early publication papers from list
     papers = [_ for _ in papers if not ".tmp." in _.bibcode]
+
+    # Start a div for this year with list of papers
     pub_list_page += dedent(
         f"""\
         <div class="{tab_pane}" id="{year}">
@@ -161,10 +187,13 @@ for year in years:
         <ol>      
         """
     )
+
+    # Add a list item for each paper
     for paper in papers:
         mark_irya_affiliations(paper)
         pub_list_page += format_paper(paper)
 
+    # Close the list and close the div for this year
     pub_list_page += dedent(
         """\
         </ol>
@@ -175,6 +204,8 @@ for year in years:
     if year == this_year:
         latest_pub_page += format_paper(papers[0])
 
+
+# Close div with the main content
 pub_list_page += """\
 </div>
 """
@@ -184,6 +215,7 @@ pub_list_page += """\
 </div>
 """
 
+# Write out the two files
 with open("publication_list.php", "w") as f:
     f.write(pub_list_page)
 
