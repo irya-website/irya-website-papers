@@ -1,0 +1,12 @@
+* Scripts to generate lists of papers for the irya web page
+** Generate list of ADS codes
+*** Original version from Jane
+#+begin_src sh
+  curl -H \
+       'Authorization: Bearer:5u522KxloEbsEBsXEjRKuQrr9uZGfvVnXfA7XQzN' \
+       'https://api.adsabs.harvard.edu/v1/search/query?q=aff%3A((%22CRyA%22+OR+%22IRyA%22+OR+%22Radioastronom%C3%ADa+y+Astrof%C3%ADsica%22+OR+%22Radioastronomia+y+Astrofisica%22))&fq=aff%3A((%22UNAM%22+OR+(%22Universidad%22+AND+%22M%C3%A9xico%22)+OR+(%22Universidad%22+AND+%22Mexico%22)+OR+%22Morelia%22))&fq=year%3A(2021)&fq=property%3A(refereed)&fl=bibcode&rows=500&sort=date+desc'
+#+end_src
+*** Python version
+[[file:get-ads-codes.py]]
+
+
