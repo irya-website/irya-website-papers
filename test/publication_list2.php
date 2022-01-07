@@ -1127,7 +1127,7 @@ Wang, Jia-Wei; Koch, Patrick M.; <strong>Galván-Madrid, Roberto</strong>; Lai, 
 <i>Multidirectional Mass Accretion and Collimated Outflows on Scales of 100-2000 au in Early Stages of High-mass Protostars</i>
 </a>
 <br/>
-Goddi, C.; Ginsburg, A.; Maud, L. T.; Zhang, Q.; Zapata, Luis A.
+Goddi, C.; Ginsburg, A.; Maud, L. T.; Zhang, Q.; <strong>Zapata, Luis A.</strong>
 <br/>
 2020/12, The Astrophysical Journal, 905, 25
 </p></li>
@@ -1837,7 +1837,7 @@ Chevance, Mélanie; Kruijssen, J. M. Diederik; <strong>Vazquez-Semadeni, Enrique
 <i>Dust and gas content of high-redshift galaxies hosting obscured AGN in the Chandra Deep Field-South</i>
 </a>
 <br/>
-D'Amato, Q.; Gilli, R.; Vignali, C.; Massardi, M.; Pozzi, F.; Zamorani, G.; Circosta, C.; Vito, F.; Fritz, J.; Cresci, G.; Casasola, V.; Calura, F.; Feltre, A.; Manieri, V.; Rigopoulou, D.; Tozzi, P.; Norman, C.
+D'Amato, Q.; Gilli, R.; Vignali, C.; Massardi, M.; Pozzi, F.; Zamorani, G.; Circosta, C.; Vito, F.; <strong>Fritz, J.</strong>; Cresci, G.; Casasola, V.; Calura, F.; Feltre, A.; Manieri, V.; Rigopoulou, D.; Tozzi, P.; Norman, C.
 <br/>
 2020/04, Astronomy and Astrophysics, 636, A37
 </p></li>
@@ -6118,7 +6118,7 @@ Moretti, A.; Bettoni, D.; Poggianti, B. M.; Fasano, G.; Varela, J.; D'Onofrio, M
 <i>OmegaWINGS: OmegaCAM-VST observations of WINGS galaxy clusters</i>
 </a>
 <br/>
-Gullieuszik, M.; Poggianti, B.; Fasano, G.; Zaggia, S.; Paccagnella, A.; Moretti, A.; Bettoni, D.; D'Onofrio, M.; Couch, W. J.; Vulcani, B.; Fritz, J.; Omizzolo, A.; Baruffolo, A.; Schipani, P.; Capaccioli, M.; Varela, J.
+Gullieuszik, M.; Poggianti, B.; Fasano, G.; Zaggia, S.; Paccagnella, A.; Moretti, A.; Bettoni, D.; D'Onofrio, M.; Couch, W. J.; Vulcani, B.; <strong>Fritz, J.</strong>; Omizzolo, A.; Baruffolo, A.; Schipani, P.; Capaccioli, M.; Varela, J.
 <br/>
 2015/09, Astronomy and Astrophysics, 581, A41
 </p></li>
@@ -6508,7 +6508,7 @@ McClure, M. K.; Espaillat, C.; Calvet, N.; Bergin, E.; <strong>D'Alessio, P.</st
 <i>Hot ammonia around young O-type stars. II. JVLA imaging of highly excited metastable NH<SUB>3</SUB> masers in W51-North</i>
 </a>
 <br/>
-Goddi, C.; Henkel, C.; Zhang, Q.; Zapata, L.; Wilson, T. L.
+Goddi, C.; Henkel, C.; Zhang, Q.; <strong>Zapata, L.</strong>; Wilson, T. L.
 <br/>
 2015/01, Astronomy and Astrophysics, 573, A109
 </p></li>
@@ -6859,7 +6859,7 @@ Torrelles, J. M.; Curiel, S.; Estalella, R.; Anglada, G.; Gómez, J. F.; Cantó,
 <i>A spider-like outflow in Barnard 5 - IRS 1: the transition from a collimated jet to a wide-angle outflow?</i>
 </a>
 <br/>
-Zapata, Luis A.; Arce, Héctor G.; Brassfield, Erin; Palau, Aina; Patel, Nimesh; Pineda, Jaime E.
+<strong>Zapata, Luis A.</strong>; Arce, Héctor G.; Brassfield, Erin; Palau, Aina; Patel, Nimesh; Pineda, Jaime E.
 <br/>
 2014/07, Monthly Notices of the Royal Astronomical Society, 441, 3696
 </p></li>

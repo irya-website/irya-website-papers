@@ -9,22 +9,38 @@ latest_publication.php with the most recent paper.
 Authors: Will Henney and Jane Arthur, 2022
 """
 
-import ads
+# Standard library imports
 import sys
 import json
 import datetime
 from textwrap import dedent
+
+# Third-party library
+# Install with "pip install ads"
+# Requires API key, see step 2 of "Getting Started" at https://ads.readthedocs.io/en/latest/
+import ads
+
+PUB_LIST_FILE = "publication_list2.php"
+LATEST_PUB_FILE = "latest_publication2.php"
 
 start_year = 2003
 this_year = datetime.date.today().year
 
 years = list(reversed(range(start_year, this_year + 1)))
 
+# Add bibcodes to this list in order to inspect for debugging purposes
+DEBUG_BIBCODES = [
+    # "2020ApJ...905...25G",  # Failed highlighting in author list
+]
+
 # We look for these different variants of the institute name
+# Any special cases due to journal errors should be added here
 irya_variants = [
     "CRyA",
     "IRyA",
     "Radioastronomía y Astrofísica",
+    "Radioastronomía y Astrofisíca",  # For Luis Zapata 2020 paper
+    "Radioastronomí a y Astrofí sica",  # For Gustavo Bruzual 2021 paper
     "Radioastronomia y Astrofisica",
 ]
 affstring = "(" + " OR ".join([f'"{_}"' for _ in irya_variants]) + ")"
@@ -192,6 +208,9 @@ for year in years:
     for paper in papers:
         mark_irya_affiliations(paper)
         pub_list_page += format_paper(paper)
+        if paper.bibcode in DEBUG_BIBCODES:
+            print("*** DEBUG_BIBCODE", paper.bibcode)
+            print(paper.items())
 
     # Close the list and close the div for this year
     pub_list_page += dedent(
@@ -216,8 +235,8 @@ pub_list_page += """\
 """
 
 # Write out the two files
-with open("publication_list.php", "w") as f:
+with open(PUB_LIST_FILE, "w") as f:
     f.write(pub_list_page)
 
-with open("latest_publication.php", "w") as f:
+with open(LATEST_PUB_FILE, "w") as f:
     f.write(latest_pub_page)
