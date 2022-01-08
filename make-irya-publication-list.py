@@ -52,6 +52,7 @@ irya_variants = [
     "Radioastronomía y Astrofísica",
     "Radioastronomía y Astrofisíca",  # For Luis Zapata 2020 paper
     "Radioastronomí a y Astrofí sica",  # For Gustavo Bruzual 2021 paper
+    "Radioastronomıa y Astrofısica",  # For Javier Ballesteros 2021 paper
     "Radioastronomia y Astrofisica",
 ]
 affstring = "(" + " OR ".join([f'"{_}"' for _ in irya_variants]) + ")"

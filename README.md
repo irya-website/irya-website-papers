@@ -2,6 +2,8 @@
 
 Python script that uses ADS to construct web page with lists of refereed publications by researchers from the Instituto de Radioastronomía y Astrofísica, Universidad Nacional Autónoma de México.
 
+The output from this script can be seen [here.](https://www.irya.unam.mx/web/en/research/publications)
+
 ## Install dependencies
 
 ```sh
@@ -36,6 +38,7 @@ irya_variants = [
     "Radioastronomía y Astrofísica",
     "Radioastronomía y Astrofisíca",  # For Luis Zapata 2020 paper
     "Radioastronomí a y Astrofí sica",  # For Gustavo Bruzual 2021 paper
+    "Radioastronomıa y Astrofısica",    # For Javier Ballesteros 2021 paper
     "Radioastronomia y Astrofisica",
 ]
 ```
