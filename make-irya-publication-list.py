@@ -19,6 +19,7 @@ Authors: Will Henney and Jane Arthur, 2022
 import sys
 import json
 import datetime
+import re
 from textwrap import dedent
 
 # Third-party library
@@ -79,9 +80,14 @@ fields = [
 ]
 
 
-def fuzzy_in(a, b):
-    """Check if a is in b but ignoring accents, etc"""
-    return unidecode(a) in unidecode(b)
+def fuzzy(s):
+    """Transform string for a fuzzy comparison
+
+    1. Eliminate accents
+    2. Fold case
+    3. Remove non-word characters
+    """
+    return re.sub("\W", "", unidecode(s).casefold())
 
 
 def mark_irya_affiliations(paper):
@@ -91,7 +97,7 @@ def mark_irya_affiliations(paper):
     """
     for i, [author, affil] in enumerate(zip(paper.author, paper.aff)):
         for variant in irya_variants:
-            if fuzzy_in(variant, affil):
+            if fuzzy(variant) in fuzzy(affil):
                 paper.author[i] = f"<strong>{author}</strong>"
                 break
 
