@@ -15,10 +15,10 @@ function toggleAuthors(bibcode, numAuthors, longList) {
   }
 };
 </script>
-<div class="row-fluid">
-<div id="sidebar" class="span1">
-<ul class="nav nav-pills nav-stacked mod-list">
-<li style="width: 58px;"><a href="#2022" data-toggle="pill">2022</a></li>
+    <div class="row-fluid">
+        <div id="sidebar" class="span1">
+    <ul class="nav nav-pills nav-stacked mod-list">
+    <li style="width: 58px;"><a href="#2022" data-toggle="pill">2022</a></li>
 <li style="width: 58px;"><a href="#2021" data-toggle="pill">2021</a></li>
 <li style="width: 58px;"><a href="#2020" data-toggle="pill">2020</a></li>
 <li style="width: 58px;"><a href="#2019" data-toggle="pill">2019</a></li>
@@ -38,10 +38,10 @@ function toggleAuthors(bibcode, numAuthors, longList) {
 <li style="width: 58px;"><a href="#2005" data-toggle="pill">2005</a></li>
 <li style="width: 58px;"><a href="#2004" data-toggle="pill">2004</a></li>
 <li style="width: 58px;"><a href="#2003" data-toggle="pill">2003</a></li>
-</ul>
-</div>
-<div class="tab-content span11">
-<div class="tab-pane active" id="2022">
+    </ul>
+    </div>
+        <div class="tab-content span11">
+    <div class="tab-pane active" id="2022">
 <h4 style="text-indent: 10px;">Publications 2022</h4>
 <ol>      
 <li><p>
@@ -522,15 +522,6 @@ toggleAuthors('2021ApJ...915L..10S', 23, 0);
 2021/07, The Astrophysical Journal, 915, L10
 </p></li>
 <li><p>
-<a href="https://ui.adsabs.harvard.edu/abs/2021ExA....51..729F" target="_blank">
-<i>Chronos: A NIR spectroscopic galaxy survey to probe the most fundamental stages of galaxy evolution</i>
-</a>
-<br/>
-Ferreras, I.; Cropper, M.; Sharples, R.; Bland-Hawthorn, J.; <strong>Bruzual, G.</strong>; Charlot, S.; Conselice, C. J.; Driver, S.; Dunlop, J.; Hopkins, A. M.; Kaviraj, S.; Kitching, T.; Barbera, F. La; Lahav, O.; Pasquali, A.; Serjeant, S.; Silk, J.; Windhorst, R.
-<br/>
-2021/06, Experimental Astronomy, 51, 729
-</p></li>
-<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...914...88P" target="_blank">
 <i>Spiral Arms and a Massive Dust Disk with Non-Keplerian Kinematics: Possible Evidence for Gravitational Instability in the Disk of Elias 2-27</i>
 </a>
@@ -638,7 +629,7 @@ Fernández-López, M.; Sanhueza, P.; <strong>Zapata, L. A.</strong>; Stephens, I
 <i>Fragmentation and kinematics in high-mass star formation. CORE-extension targeting two very young high-mass star-forming regions</i>
 </a>
 <br/>
-Beuther, H.; Gieser, C.; Suri, S.; Linz, H.; Klaassen, P.; Semenov, D.; Winters, J. M.; Henning, Th.; Soler, J. D.; Urquhart, J. S.; Syed, J.; Feng, S.; Möller, T.; Beltrán, M. T.; Sánchez-Monge, Á.; Longmore, S. N.; Peters, T.; Ballesteros-Paredes, J.; Schilke, P.; Moscadelli, L.; <span id="2021A&A...649A.113B.authors" style="display: none;">Palau, A.; Cesaroni, R.; Lumsden, S.; Pudritz, R.; Wyrowski, F.; Kuiper, R.; Ahmadi, A.</span><span id="2021A&A...649A.113B.button"></span>
+Beuther, H.; Gieser, C.; Suri, S.; Linz, H.; Klaassen, P.; Semenov, D.; Winters, J. M.; Henning, Th.; Soler, J. D.; Urquhart, J. S.; Syed, J.; Feng, S.; Möller, T.; Beltrán, M. T.; Sánchez-Monge, Á.; Longmore, S. N.; Peters, T.; <strong>Ballesteros-Paredes, J.</strong>; Schilke, P.; Moscadelli, L.; <span id="2021A&A...649A.113B.authors" style="display: none;"><strong>Palau, A.</strong>; Cesaroni, R.; Lumsden, S.; Pudritz, R.; Wyrowski, F.; Kuiper, R.; Ahmadi, A.</span><span id="2021A&A...649A.113B.button"></span>
 <script>
 toggleAuthors('2021A&A...649A.113B', 27, 0);
 </script>
@@ -1127,7 +1118,7 @@ Wang, Jia-Wei; Koch, Patrick M.; <strong>Galván-Madrid, Roberto</strong>; Lai, 
 <i>Multidirectional Mass Accretion and Collimated Outflows on Scales of 100-2000 au in Early Stages of High-mass Protostars</i>
 </a>
 <br/>
-Goddi, C.; Ginsburg, A.; Maud, L. T.; Zhang, Q.; Zapata, Luis A.
+Goddi, C.; Ginsburg, A.; Maud, L. T.; Zhang, Q.; <strong>Zapata, Luis A.</strong>
 <br/>
 2020/12, The Astrophysical Journal, 905, 25
 </p></li>
@@ -1837,7 +1828,7 @@ Chevance, Mélanie; Kruijssen, J. M. Diederik; <strong>Vazquez-Semadeni, Enrique
 <i>Dust and gas content of high-redshift galaxies hosting obscured AGN in the Chandra Deep Field-South</i>
 </a>
 <br/>
-D'Amato, Q.; Gilli, R.; Vignali, C.; Massardi, M.; Pozzi, F.; Zamorani, G.; Circosta, C.; Vito, F.; Fritz, J.; Cresci, G.; Casasola, V.; Calura, F.; Feltre, A.; Manieri, V.; Rigopoulou, D.; Tozzi, P.; Norman, C.
+D'Amato, Q.; Gilli, R.; Vignali, C.; Massardi, M.; Pozzi, F.; Zamorani, G.; Circosta, C.; Vito, F.; <strong>Fritz, J.</strong>; Cresci, G.; Casasola, V.; Calura, F.; Feltre, A.; Manieri, V.; Rigopoulou, D.; Tozzi, P.; Norman, C.
 <br/>
 2020/04, Astronomy and Astrophysics, 636, A37
 </p></li>
@@ -1967,7 +1958,7 @@ Fernández-López, Manuel; <strong>Zapata, Luis A.</strong>; <strong>Rodríguez,
 <i>Anisotropic infall in the outskirts of OmegaWINGS galaxy clusters</i>
 </a>
 <br/>
-Salerno, Juan Manuel; Martínez, Héctor J.; Muriel, Hernán; Coenda, Valeria; Vulcani, Benedetta; Poggianti, Bianca; Moretti, Alessia; Gullieuszik, Marco; Fritz, Jacopo; Bettoni, Daniela
+Salerno, Juan Manuel; Martínez, Héctor J.; Muriel, Hernán; Coenda, Valeria; Vulcani, Benedetta; Poggianti, Bianca; Moretti, Alessia; Gullieuszik, Marco; <strong>Fritz, Jacopo</strong>; Bettoni, Daniela
 <br/>
 2020/04, Monthly Notices of the Royal Astronomical Society, 493, 4950
 </p></li>
@@ -3451,7 +3442,7 @@ toggleAuthors('2018ApJ...867L..11L', 26, 0);
 <i>The XXL Survey: XXX. Characterisation of the XLSSsC N01 supercluster and analysis of the galaxy stellar populations</i>
 </a>
 <br/>
-Guglielmo, V.; Poggianti, B. M.; Vulcani, B.; Moretti, A.; Fritz, J.; Gastaldello, F.; Adami, C.; Caretta, C. A.; Willis, J.; Koulouridis, E.; Ramos Ceja, M. E.; Giles, P.; Baldry, I.; Birkinshaw, M.; Bongiorno, A.; Brown, M.; Chiappetti, L.; Driver, S.; Elyiv, A.; Evrard, A.; <span id="2018A&A...620A..15G.authors" style="display: none;">Grootes, M.; Guennou, L.; Hopkins, A.; Horellou, C.; Iovino, A.; Maurogordato, S.; Owers, M.; Pacaud, F.; Paltani, S.; Pierre, M.; Plionis, M.; Ponman, T.; Robotham, A.; Sadibekova, T.; Smolčić, V.; Tuffs, R.; Vignali, C.</span><span id="2018A&A...620A..15G.button"></span>
+Guglielmo, V.; Poggianti, B. M.; Vulcani, B.; Moretti, A.; <strong>Fritz, J.</strong>; Gastaldello, F.; Adami, C.; Caretta, C. A.; Willis, J.; Koulouridis, E.; Ramos Ceja, M. E.; Giles, P.; Baldry, I.; Birkinshaw, M.; Bongiorno, A.; Brown, M.; Chiappetti, L.; Driver, S.; Elyiv, A.; Evrard, A.; <span id="2018A&A...620A..15G.authors" style="display: none;">Grootes, M.; Guennou, L.; Hopkins, A.; Horellou, C.; Iovino, A.; Maurogordato, S.; Owers, M.; Pacaud, F.; Paltani, S.; Pierre, M.; Plionis, M.; Ponman, T.; Robotham, A.; Sadibekova, T.; Smolčić, V.; Tuffs, R.; Vignali, C.</span><span id="2018A&A...620A..15G.button"></span>
 <script>
 toggleAuthors('2018A&A...620A..15G', 37, 0);
 </script>
@@ -3843,15 +3834,6 @@ toggleAuthors('2018ApJ...859...84H', 26, 0);
 <strong>Zapata, Luis A.</strong>; Ho, Paul T. P.; <strong>Rodríguez, Luis F.</strong>
 <br/>
 2018/06, Monthly Notices of the Royal Astronomical Society, 476, 5382
-</p></li>
-<li><p>
-<a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.476.4753J" target="_blank">
-<i>GASP. IX. Jellyfish galaxies in phase-space: an orbital study of intense ram-pressure stripping in clusters</i>
-</a>
-<br/>
-Jaffé, Yara L.; Poggianti, Bianca M.; Moretti, Alessia; Gullieuszik, Marco; Smith, Rory; Vulcani, Benedetta; Fasano, Giovanni; <strong>Fritz, Jacopo</strong>; Tonnesen, Stephanie; Bettoni, Daniela; Hau, George; Biviano, Andrea; Bellhouse, Callum; McGee, Sean
-<br/>
-2018/06, Monthly Notices of the Royal Astronomical Society, 476, 4753
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...859...76V" target="_blank">
@@ -4902,7 +4884,7 @@ Mittal, Rupal; McDonald, M.; Whelan, John T.; <strong>Bruzual, Gustavo</strong>
 <i>The ALMA View of the OMC1 Explosion in Orion</i>
 </a>
 <br/>
-Bally, John; Ginsburg, Adam; Arce, Hector; Eisner, Josh; Youngblood, Allison; Zapata, Luis; Zinnecker, Hans
+Bally, John; Ginsburg, Adam; Arce, Hector; Eisner, Josh; Youngblood, Allison; <strong>Zapata, Luis</strong>; Zinnecker, Hans
 <br/>
 2017/03, The Astrophysical Journal, 837, 60
 </p></li>
@@ -5785,7 +5767,7 @@ González-Samaniego, A.; Avila-Reese, V.; <strong>Colín, P.</strong>
 <i>Mapping CO Gas in the GG Tauri A Triple System with 50 au Spatial Resolution</i>
 </a>
 <br/>
-Tang, Ya-Wen; Dutrey, Anne; Guilloteau, Stéphane; Chapillon, Edwige; Pietu, Vincent; Di Folco, Emmanuel; Bary, Jeff; Beck, Tracy; Beust, Hervé; Boehler, Yann; Gueth, Fréderic; Huré, Jean-Marc; Pierens, Arnaud; Simon, Michal
+Tang, Ya-Wen; Dutrey, Anne; Guilloteau, Stéphane; Chapillon, Edwige; Pietu, Vincent; Di Folco, Emmanuel; Bary, Jeff; Beck, Tracy; Beust, Hervé; <strong>Boehler, Yann</strong>; Gueth, Fréderic; Huré, Jean-Marc; Pierens, Arnaud; Simon, Michal
 <br/>
 2016/03, The Astrophysical Journal, 820, 19
 </p></li>
@@ -6118,7 +6100,7 @@ Moretti, A.; Bettoni, D.; Poggianti, B. M.; Fasano, G.; Varela, J.; D'Onofrio, M
 <i>OmegaWINGS: OmegaCAM-VST observations of WINGS galaxy clusters</i>
 </a>
 <br/>
-Gullieuszik, M.; Poggianti, B.; Fasano, G.; Zaggia, S.; Paccagnella, A.; Moretti, A.; Bettoni, D.; D'Onofrio, M.; Couch, W. J.; Vulcani, B.; Fritz, J.; Omizzolo, A.; Baruffolo, A.; Schipani, P.; Capaccioli, M.; Varela, J.
+Gullieuszik, M.; Poggianti, B.; Fasano, G.; Zaggia, S.; Paccagnella, A.; Moretti, A.; Bettoni, D.; D'Onofrio, M.; Couch, W. J.; Vulcani, B.; <strong>Fritz, J.</strong>; Omizzolo, A.; Baruffolo, A.; Schipani, P.; Capaccioli, M.; Varela, J.
 <br/>
 2015/09, Astronomy and Astrophysics, 581, A41
 </p></li>
@@ -6508,7 +6490,7 @@ McClure, M. K.; Espaillat, C.; Calvet, N.; Bergin, E.; <strong>D'Alessio, P.</st
 <i>Hot ammonia around young O-type stars. II. JVLA imaging of highly excited metastable NH<SUB>3</SUB> masers in W51-North</i>
 </a>
 <br/>
-Goddi, C.; Henkel, C.; Zhang, Q.; Zapata, L.; Wilson, T. L.
+Goddi, C.; Henkel, C.; Zhang, Q.; <strong>Zapata, L.</strong>; Wilson, T. L.
 <br/>
 2015/01, Astronomy and Astrophysics, 573, A109
 </p></li>
@@ -6544,7 +6526,7 @@ Vulcani, Benedetta; Poggianti, Bianca M.; <strong>Fritz, Jacopo</strong>; Fasano
 <i>Low-mass galaxy assembly in simulations: regulation of early star formation by radiation from massive stars</i>
 </a>
 <br/>
-Trujillo-Gomez, Sebastian; Klypin, Anatoly; Colín, Pedro; Ceverino, Daniel; Arraki, Kenza S.; Primack, Joel
+Trujillo-Gomez, Sebastian; Klypin, Anatoly; <strong>Colín, Pedro</strong>; Ceverino, Daniel; Arraki, Kenza S.; Primack, Joel
 <br/>
 2015/01, Monthly Notices of the Royal Astronomical Society, 446, 1140
 </p></li>
@@ -6787,7 +6769,7 @@ Reggiani, Maddalena; Quanz, Sascha P.; Meyer, Michael R.; Pueyo, Laurent; Absil,
 <i>Circumbinary Ring, Circumstellar Disks, and Accretion in the Binary System UY Aurigae</i>
 </a>
 <br/>
-Tang, Ya-Wen; Dutrey, Anne; Guilloteau, Stéphane; Piétu, Vincent; Di Folco, Emmanuel; Beck, Tracy; Ho, Paul T. P.; Boehler, Yann; Gueth, Fréderic; Bary, Jeff; Simon, Michal
+Tang, Ya-Wen; Dutrey, Anne; Guilloteau, Stéphane; Piétu, Vincent; Di Folco, Emmanuel; Beck, Tracy; Ho, Paul T. P.; <strong>Boehler, Yann</strong>; Gueth, Fréderic; Bary, Jeff; Simon, Michal
 <br/>
 2014/09, The Astrophysical Journal, 793, 10
 </p></li>
@@ -6859,7 +6841,7 @@ Torrelles, J. M.; Curiel, S.; Estalella, R.; Anglada, G.; Gómez, J. F.; Cantó,
 <i>A spider-like outflow in Barnard 5 - IRS 1: the transition from a collimated jet to a wide-angle outflow?</i>
 </a>
 <br/>
-Zapata, Luis A.; Arce, Héctor G.; Brassfield, Erin; Palau, Aina; Patel, Nimesh; Pineda, Jaime E.
+<strong>Zapata, Luis A.</strong>; Arce, Héctor G.; Brassfield, Erin; Palau, Aina; Patel, Nimesh; Pineda, Jaime E.
 <br/>
 2014/07, Monthly Notices of the Royal Astronomical Society, 441, 3696
 </p></li>
@@ -6949,7 +6931,7 @@ Cabrera-Ziri, I.; Bastian, N.; Davies, B.; Magris, G.; <strong>Bruzual, G.</stro
 <i>Periodic Radio Continuum Emission Associated with the beta Cephei Star V2187 Cyg</i>
 </a>
 <br/>
-Tapia, M.; Rodríguez, L. F.; Tovmassian, G.; Rodríguez-Gómez, V.; González-Buitrago, D.; Zharikov, S.; Ortiz-León, G. N.
+Tapia, M.; <strong>Rodríguez, L. F.</strong>; Tovmassian, G.; Rodríguez-Gómez, V.; González-Buitrago, D.; Zharikov, S.; <strong>Ortiz-León, G. N.</strong>
 <br/>
 2014/04, Revista Mexicana de Astronomia y Astrofisica, 50, 127
 </p></li>
@@ -6985,7 +6967,7 @@ Palau, Aina; Estalella, Robert; Girart, Josep M.; Fuente, Asunción; Fontani, Fr
 <i>Faint disks around classical T Tauri stars: Small but dense enough to form planets</i>
 </a>
 <br/>
-Piétu, V.; Guilloteau, S.; Di Folco, E.; Dutrey, A.; Boehler, Y.
+Piétu, V.; Guilloteau, S.; Di Folco, E.; Dutrey, A.; <strong>Boehler, Y.</strong>
 <br/>
 2014/04, Astronomy and Astrophysics, 564, A95
 </p></li>
@@ -7219,7 +7201,7 @@ Hernández-Pérez, Fabiola; <strong>Bruzual, Gustavo</strong>
 <i>Probing dust settling in proto-planetary discs with ALMA</i>
 </a>
 <br/>
-Boehler, Y.; Dutrey, A.; Guilloteau, S.; Piétu, V.
+<strong>Boehler, Y.</strong>; Dutrey, A.; Guilloteau, S.; Piétu, V.
 <br/>
 2013/05, Monthly Notices of the Royal Astronomical Society, 431, 1573
 </p></li>
@@ -8498,15 +8480,6 @@ Peters, Thomas; Banerjee, Robi; Klessen, Ralf S.; Mac Low, Mordecai-Mark; <stron
 2010/03, The Astrophysical Journal, 711, 1017
 </p></li>
 <li><p>
-<a href="https://ui.adsabs.harvard.edu/abs/2010JKAS...43....9K" target="_blank">
-<i>Association of Infrared Dark Cloud Cores with YSOs: Starless or Starred IRDC Cores</i>
-</a>
-<br/>
-Kim, Gwanjeong; <strong>Lee, Chang Won</strong>; Kim, Jongsoo; Lee, Youngung; Ballesteros-Paredes, Javier; Myers, Philip C.; Kurtz, S.
-<br/>
-2010/02, Journal of Korean Astronomical Society, 43, 9
-</p></li>
-<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2010MNRAS.402.1141G" target="_blank">
 <i>Revisiting 2D numerical models for the 19th century outbursts of η Carinae</i>
 </a>
@@ -9673,7 +9646,7 @@ Garay, G.; Mardones, D.; Bronfman, L.; Brooks, K. J.; <strong>Rodríguez, L. F.<
 <i>Triggered High Mass Star Formation</i>
 </a>
 <br/>
-Kurtz, Stan
+<strong>Kurtz, Stan</strong>
 <br/>
 2007/00, Journal of Korean Astronomical Society, 40, 137
 </p></li>
@@ -10614,15 +10587,6 @@ Prieur, J. -L.; <strong>Avila, R.</strong>; Daigne, G.; Vernin, J.
 2004/08, The Astrophysical Journal, 610, 827
 </p></li>
 <li><p>
-<a href="https://ui.adsabs.harvard.edu/abs/2004Ap&SS.292..369O" target="_blank">
-<i>A Model to Test the Internal Structure of the G31.41+0.31 Hot Molecular Core</i>
-</a>
-<br/>
-Osorio, Mayra; Anglada, Guillem; <strong>and, Susana Lizano</strong>; <strong>D'Alessio, Paola</strong>
-<br/>
-2004/08, Astrophysics and Space Science, 292, 369
-</p></li>
-<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2004Ap&SS.292..187V" target="_blank">
 <i>Fragmentation and Structure Formation</i>
 </a>
@@ -10822,5 +10786,6 @@ Muzerolle, James; Calvet, Nuria; Hartmann, Lee; <strong>D'Alessio, Paola</strong
 </p></li>
 </ol>
 </div>
-</div>
-</div>
+    </div>
+        </div>
+    

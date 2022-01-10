@@ -8,7 +8,7 @@ latest_publication.php with the most recent paper.
 
 Usage:
 
-    make-irya-publication-list.py OUTPUT_FOLDER
+    make_irya_publication_list.py OUTPUT_FOLDER
 
 Files will be written to OUTPUT_FOLDER
 
@@ -21,6 +21,7 @@ import json
 import datetime
 import re
 from textwrap import dedent
+import html
 
 # Third-party library
 # Install with "pip install ads"
@@ -44,6 +45,7 @@ years = list(reversed(range(start_year, this_year + 1)))
 # Add bibcodes to this list in order to inspect for debugging purposes
 DEBUG_BIBCODES = [
     # "2020ApJ...905...25G",  # Failed highlighting in author list
+    # "2007JKAS...40..137K",  # Stan paper with "&" in affiliation
 ]
 
 # We look for these different variants of the institute name
@@ -52,7 +54,6 @@ irya_variants = [
     "CRyA",
     "IRyA",
     "Radioastronomía y Astrofísica",
-    "Radioastronomí a y Astrofí sica",  # For Gustavo Bruzual 2021 paper
 ]
 affstring = "(" + " OR ".join([f'"{_}"' for _ in irya_variants]) + ")"
 
@@ -83,11 +84,12 @@ fields = [
 def fuzzy(s):
     """Transform string for a fuzzy comparison
 
-    1. Eliminate accents
-    2. Fold case
-    3. Remove non-word characters
+    1. Decode HTML entities: "&amp;" -> "&"
+    2. Eliminate accents: "Astrofísica" -> "Astrofisica"
+    3. Fold case: "Astrofísica" -> "astrofisica"
+    4. Remove non-word characters: "onom&ía y astro" -> "onomíayastro"
     """
-    return re.sub("\W", "", unidecode(s).casefold())
+    return re.sub(r"\W", "", unidecode(html.unescape(s)).casefold())
 
 
 def mark_irya_affiliations(paper):
@@ -168,95 +170,102 @@ function toggleAuthors(bibcode, numAuthors, longList) {
 </script>
 """
 
-pub_list_page = script_header
-latest_pub_page = script_header
 
-# Start outer div
-pub_list_page += """\
-<div class="row-fluid">
-"""
+def main():
+    """Execute all the queries and construct the pages"""
 
-# Make navigation sidebar with links for each year
-pub_list_page += """\
-<div id="sidebar" class="span1">
-<ul class="nav nav-pills nav-stacked mod-list">
-"""
+    pub_list_page = script_header
+    latest_pub_page = script_header
 
-for year in years:
-    pub_list_page += (
-        f'<li style="width: 58px;"><a href="#{year}" data-toggle="pill">{year}</a></li>'
-        + "\n"
-    )
+    # Start outer div
+    pub_list_page += """\
+    <div class="row-fluid">
+    """
 
-# End navigation sidebar
-pub_list_page += """\
-</ul>
-</div>
-"""
+    # Make navigation sidebar with links for each year
+    pub_list_page += """\
+    <div id="sidebar" class="span1">
+    <ul class="nav nav-pills nav-stacked mod-list">
+    """
 
-# Start div with the main content
-pub_list_page += """\
-<div class="tab-content span11">
-"""
-
-for year in years:
-    tab_pane = "tab-pane active" if year == this_year else "tab-pane"
-    # Make a single ADS query for each year
-    papers = list(
-        ads.SearchQuery(
-            q=f"aff:{affstring}",
-            fq=f"aff:{affstring2} AND property:refereed",
-            fl=fields,
-            year=f"{year}",
-            rows=2000,
-            sort="date+desc",
+    for year in years:
+        pub_list_page += (
+            f'<li style="width: 58px;"><a href="#{year}" data-toggle="pill">{year}</a></li>'
+            + "\n"
         )
-    )
-    # Remove MNRAS early publication papers from list
-    papers = [_ for _ in papers if not ".tmp." in _.bibcode]
 
-    # Start a div for this year with list of papers
-    pub_list_page += dedent(
-        f"""\
-        <div class="{tab_pane}" id="{year}">
-        <h4 style="text-indent: 10px;">Publications {year}</h4>
-        <ol>      
-        """
-    )
+    # End navigation sidebar
+    pub_list_page += """\
+    </ul>
+    </div>
+    """
 
-    # Add a list item for each paper
-    for paper in papers:
-        mark_irya_affiliations(paper)
-        pub_list_page += format_paper(paper)
-        if paper.bibcode in DEBUG_BIBCODES:
-            print("*** DEBUG_BIBCODE", paper.bibcode)
-            print(paper.items())
+    # Start div with the main content
+    pub_list_page += """\
+    <div class="tab-content span11">
+    """
 
-    # Close the list and close the div for this year
-    pub_list_page += dedent(
-        """\
-        </ol>
-        </div>
-        """
-    )
-    # Also add latest publication to a separate page
-    if year == this_year:
-        latest_pub_page += format_paper(papers[0])
+    for year in years:
+        tab_pane = "tab-pane active" if year == this_year else "tab-pane"
+        # Make a single ADS query for each year
+        papers = list(
+            ads.SearchQuery(
+                q=f"aff:{affstring}",
+                fq=f"aff:{affstring2} AND property:refereed",
+                fl=fields,
+                year=f"{year}",
+                rows=2000,
+                sort="date+desc",
+            )
+        )
+        # Remove MNRAS early publication papers from list
+        papers = [_ for _ in papers if not ".tmp." in _.bibcode]
+
+        # Start a div for this year with list of papers
+        pub_list_page += dedent(
+            f"""\
+            <div class="{tab_pane}" id="{year}">
+            <h4 style="text-indent: 10px;">Publications {year}</h4>
+            <ol>      
+            """
+        )
+
+        # Add a list item for each paper
+        for paper in papers:
+            mark_irya_affiliations(paper)
+            pub_list_page += format_paper(paper)
+            if paper.bibcode in DEBUG_BIBCODES:
+                print("*** DEBUG_BIBCODE", paper.bibcode)
+                print(paper.items())
+
+        # Close the list and close the div for this year
+        pub_list_page += dedent(
+            """\
+            </ol>
+            </div>
+            """
+        )
+        # Also add latest publication to a separate page
+        if year == this_year:
+            latest_pub_page += format_paper(papers[0])
+
+    # Close div with the main content
+    pub_list_page += """\
+    </div>
+    """
+
+    # Close outer div
+    pub_list_page += """\
+    </div>
+    """
+
+    # Write out the two files
+    with open(f"{OUTPUT_FOLDER}/{PUB_LIST_FILE}", "w") as f:
+        f.write(pub_list_page)
+
+    with open(f"{OUTPUT_FOLDER}/{LATEST_PUB_FILE}", "w") as f:
+        f.write(latest_pub_page)
 
 
-# Close div with the main content
-pub_list_page += """\
-</div>
-"""
-
-# Close outer div
-pub_list_page += """\
-</div>
-"""
-
-# Write out the two files
-with open(f"{OUTPUT_FOLDER}/{PUB_LIST_FILE}", "w") as f:
-    f.write(pub_list_page)
-
-with open(f"{OUTPUT_FOLDER}/{LATEST_PUB_FILE}", "w") as f:
-    f.write(latest_pub_page)
+if __name__ == "__main__":
+    main()
