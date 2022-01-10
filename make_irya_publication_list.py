@@ -87,7 +87,7 @@ def fuzzy(s):
     1. Decode HTML entities: "&amp;" -> "&"
     2. Eliminate accents: "Astrofísica" -> "Astrofisica"
     3. Fold case: "Astrofísica" -> "astrofisica"
-    4. Remove non-word characters: "onom&ía y astro" -> "onomíayastro"
+    4. Remove non-word characters: "onom&ia y astro" -> "onomiayastro"
     """
     return re.sub(r"\W", "", unidecode(html.unescape(s)).casefold())
 
