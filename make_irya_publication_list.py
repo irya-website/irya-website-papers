@@ -54,6 +54,7 @@ irya_variants = [
     "CRyA",
     "IRyA",
     "Radioastronomía y Astrofísica",
+    "Radioastronomí a y Astrofí sica",  # For Gustavo Bruzual 2021 paper
 ]
 affstring = "(" + " OR ".join([f'"{_}"' for _ in irya_variants]) + ")"
 
