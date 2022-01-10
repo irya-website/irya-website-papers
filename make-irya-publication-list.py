@@ -25,6 +25,7 @@ from textwrap import dedent
 # Install with "pip install ads"
 # Requires API key, see step 2 of "Getting Started" at https://ads.readthedocs.io/en/latest/
 import ads
+from unidecode import unidecode
 
 PUB_LIST_FILE = "publication_list2.php"
 LATEST_PUB_FILE = "latest_publication2.php"
@@ -50,17 +51,13 @@ irya_variants = [
     "CRyA",
     "IRyA",
     "Radioastronomía y Astrofísica",
-    "Radioastronomía y Astrofisíca",  # For Luis Zapata 2020 paper
     "Radioastronomí a y Astrofí sica",  # For Gustavo Bruzual 2021 paper
-    "Radioastronomıa y Astrofısica",  # For Javier Ballesteros 2021 paper
-    "Radioastronomia y Astrofisica",
 ]
 affstring = "(" + " OR ".join([f'"{_}"' for _ in irya_variants]) + ")"
 
 # To eliminate false positives in Italy, we have an auxiliary check on UNAM or Morelia
 unam_variants = [
     '"UNAM"',
-    '("Universidad" AND "México")',
     '("Universidad" AND "Mexico")',
     '"Morelia"',
 ]
@@ -82,6 +79,11 @@ fields = [
 ]
 
 
+def fuzzy_in(a, b):
+    """Check if a is in b but ignoring accents, etc"""
+    return unidecode(a) in unidecode(b)
+
+
 def mark_irya_affiliations(paper):
     """Highlight authors with IRyA affiliation
 
@@ -89,7 +91,7 @@ def mark_irya_affiliations(paper):
     """
     for i, [author, affil] in enumerate(zip(paper.author, paper.aff)):
         for variant in irya_variants:
-            if variant in affil:
+            if fuzzy_in(variant, affil):
                 paper.author[i] = f"<strong>{author}</strong>"
                 break
 
