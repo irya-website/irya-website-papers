@@ -8,6 +8,7 @@ The output from this script can be seen [here.](https://www.irya.unam.mx/web/en/
 
 ```sh
 pip install ads
+pip install unidecode
 ```
 
 ## Usage
@@ -36,11 +37,8 @@ irya_variants = [
     "CRyA",
     "IRyA",
     "Radioastronomía y Astrofísica",
-    "Radioastronomía y Astrofisíca",  # For Luis Zapata 2020 paper
     "Radioastronomí a y Astrofí sica",  # For Gustavo Bruzual 2021 paper
-    "Radioastronomıa y Astrofısica",    # For Javier Ballesteros 2021 paper
-    "Radioastronomia y Astrofisica",
 ]
 ```
 
-When a paper gets missed out, it is usually because of an error in the accents of the institute name.  Any new variants that are spotted can be added here.
+We now use an accent-insensitive method that catches most errors in specifying the institute name.  But any new variants that are spotted can be added here.
