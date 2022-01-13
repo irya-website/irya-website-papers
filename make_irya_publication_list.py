@@ -41,7 +41,9 @@ DEBUG_BIBCODES = [
 ]
 
 # We look for these different variants of the institute name
-# Any special cases due to journal errors should be added here
+#
+# Any special cases due to journal errors should be added to the end
+# of this list
 irya_variants = [
     "CRyA",
     "IRyA",
@@ -54,7 +56,7 @@ irya_variants = [
 # may want to report diagnostics
 nonstandard_variants = irya_variants[3:]
 
-# List for saving papers that we find win nonstandard affiliation
+# List for saving papers that we find with nonstandard affiliation
 nonstandard_papers = []
 
 affstring = "(" + " OR ".join([f'"{_}"' for _ in irya_variants]) + ")"
