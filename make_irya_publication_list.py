@@ -31,16 +31,8 @@ from unidecode import unidecode
 
 PUB_LIST_FILE = "publication_list2.php"
 LATEST_PUB_FILE = "latest_publication2.php"
+DIAGNOSTIC_FILE = "nonstandard_variants.txt"
 
-try:
-    OUTPUT_FOLDER = sys.argv[1]
-except IndexError:
-    sys.exit(f"Usage: {sys.argv[0]} OUTPUT_FOLDER")
-
-start_year = 2003
-this_year = datetime.date.today().year
-
-years = list(reversed(range(start_year, this_year + 1)))
 
 # Add bibcodes to this list in order to inspect for debugging purposes
 DEBUG_BIBCODES = [
@@ -57,6 +49,14 @@ irya_variants = [
     "Radiostronomía y Astrofísica",  # Ricardo Gonzalez paper
     "Radioastronomí a y Astrofí sica",  # For Gustavo Bruzual 2021 paper
 ]
+
+# All except the first 3 variants are mis-spellings, about which we
+# may want to report diagnostics
+nonstandard_variants = irya_variants[3:]
+
+# List for saving papers that we find win nonstandard affiliation
+nonstandard_papers = []
+
 affstring = "(" + " OR ".join([f'"{_}"' for _ in irya_variants]) + ")"
 
 # To eliminate false positives in Italy, we have an auxiliary check on UNAM or Morelia
@@ -83,15 +83,19 @@ fields = [
 ]
 
 
-def fuzzy(s):
+def fuzzy(s, squeeze=True):
     """Transform string for a fuzzy comparison
 
     1. Decode HTML entities: "&amp;" -> "&"
     2. Eliminate accents: "Astrofísica" -> "Astrofisica"
     3. Fold case: "Astrofísica" -> "astrofisica"
-    4. Remove non-word characters: "onom&ia y astro" -> "onomiayastro"
+    4. If optional argument `squeeze` is True, then remove
+       non-word characters: "onom&ia y astro" -> "onomiayastro"
     """
-    return re.sub(r"\W", "", unidecode(html.unescape(s)).casefold())
+    rslt = unidecode(html.unescape(s)).casefold()
+    if squeeze:
+        rslt = re.sub(r"\W", "", rslt)
+    return rslt
 
 
 def mark_irya_affiliations(paper):
@@ -103,6 +107,15 @@ def mark_irya_affiliations(paper):
         for variant in irya_variants:
             if fuzzy(variant) in fuzzy(affil):
                 paper.author[i] = f"<strong>{author}</strong>"
+                break
+
+
+def check_nonstandard_affiliations(paper):
+    """Check for common mispellings with IRyA affiliation"""
+    for i, [author, affil] in enumerate(zip(paper.author, paper.aff)):
+        for variant in nonstandard_variants:
+            if fuzzy(variant, squeeze=False) in fuzzy(affil, squeeze=False):
+                nonstandard_papers.append([paper.bibcode, i, author, affil])
                 break
 
 
@@ -151,7 +164,7 @@ def format_paper(paper):
 
 
 # This javascript header goes at top of the files.  We believe it was
-# written by Vicente Rodríguez
+# written by Vicente Rodríguez Gómez
 script_header = """\
 <script>
 function toggleAuthors(bibcode, numAuthors, longList) {
@@ -173,7 +186,7 @@ function toggleAuthors(bibcode, numAuthors, longList) {
 """
 
 
-def main():
+def query_years(years: list) -> tuple[str, str]:
     """Execute all the queries and construct the pages"""
 
     pub_list_page = script_header
@@ -234,6 +247,7 @@ def main():
 
         # Add a list item for each paper
         for paper in papers:
+            check_nonstandard_affiliations(paper)
             mark_irya_affiliations(paper)
             pub_list_page += format_paper(paper)
             if paper.bibcode in DEBUG_BIBCODES:
@@ -261,13 +275,53 @@ def main():
     </div>
     """
 
-    # Write out the two files
-    with open(f"{OUTPUT_FOLDER}/{PUB_LIST_FILE}", "w") as f:
-        f.write(pub_list_page)
+    return pub_list_page, latest_pub_page
 
-    with open(f"{OUTPUT_FOLDER}/{LATEST_PUB_FILE}", "w") as f:
-        f.write(latest_pub_page)
+
+def dump_nonstandard():
+    s = dedent(
+        f"""\
+        ############################################################
+        # Non-standard spellings in IRyA affiliations 2003-present
+        #        
+        # N = {len(nonstandard_papers)}
+        ############################################################
+        """
+    )
+    for bibcode, irank, author, affil in nonstandard_papers:
+        s += dedent(
+            f"""
+            {bibcode}
+            Author {irank + 1}: {author}
+            Affil: {affil}
+            """
+        )
+    with open(f"{OUTPUT_FOLDER}/{DIAGNOSTIC_FILE}", "w") as f:
+        f.write(s)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        OUTPUT_FOLDER = sys.argv[1]
+    except IndexError:
+        sys.exit(f"Usage: {sys.argv[0]} OUTPUT_FOLDER [variant]")
+
+    # Optionally write a file with the mispellings
+    try:
+        DO_SAVE_VARIANTS = "variant" in str(sys.argv[2])
+    except IndexError:
+        DO_SAVE_VARIANTS = False
+
+    start_year = 2003
+    this_year = datetime.date.today().year
+    years = list(reversed(range(start_year, this_year + 1)))
+    pub_list_page, latest_pub_page = query_years(years)
+
+    # Write out the two files
+    with open(f"{OUTPUT_FOLDER}/{PUB_LIST_FILE}", "w") as f:
+        f.write(pub_list_page)
+    with open(f"{OUTPUT_FOLDER}/{LATEST_PUB_FILE}", "w") as f:
+        f.write(latest_pub_page)
+
+    if DO_SAVE_VARIANTS:
+        dump_nonstandard()
