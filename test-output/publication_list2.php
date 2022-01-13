@@ -229,6 +229,15 @@ toggleAuthors('2021A&A...655A..84S', 32, 0);
 2021/11, The Astrophysical Journal, 921, 48
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.1314C" target="_blank">
+<i>Observations of interplanetary scintillation of the 2005 May 13 coronal mass ejection: numerical models</i>
+</a>
+<br/>
+Chang, O.; <strong>González, R. F.</strong>; Bisi, M. M.; Fallows, R. A.
+<br/>
+2021/11, Monthly Notices of the Royal Astronomical Society, 508, 1314
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.4211E" target="_blank">
 <i>The abundance of satellites around Milky Way- and M31-like galaxies with the TNG50 simulation: a matter of diversity</i>
 </a>
@@ -520,6 +529,15 @@ toggleAuthors('2021ApJ...915L..10S', 23, 0);
 
 <br/>
 2021/07, The Astrophysical Journal, 915, L10
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2021ExA....51..729F" target="_blank">
+<i>Chronos: A NIR spectroscopic galaxy survey to probe the most fundamental stages of galaxy evolution</i>
+</a>
+<br/>
+Ferreras, I.; Cropper, M.; Sharples, R.; Bland-Hawthorn, J.; <strong>Bruzual, G.</strong>; Charlot, S.; Conselice, C. J.; Driver, S.; Dunlop, J.; Hopkins, A. M.; Kaviraj, S.; Kitching, T.; Barbera, F. La; Lahav, O.; Pasquali, A.; Serjeant, S.; Silk, J.; Windhorst, R.
+<br/>
+2021/06, Experimental Astronomy, 51, 729
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...914...88P" target="_blank">
@@ -3836,6 +3854,15 @@ toggleAuthors('2018ApJ...859...84H', 26, 0);
 2018/06, Monthly Notices of the Royal Astronomical Society, 476, 5382
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.476.4753J" target="_blank">
+<i>GASP. IX. Jellyfish galaxies in phase-space: an orbital study of intense ram-pressure stripping in clusters</i>
+</a>
+<br/>
+Jaffé, Yara L.; Poggianti, Bianca M.; Moretti, Alessia; Gullieuszik, Marco; Smith, Rory; Vulcani, Benedetta; Fasano, Giovanni; <strong>Fritz, Jacopo</strong>; Tonnesen, Stephanie; Bettoni, Daniela; Hau, George; Biviano, Andrea; Bellhouse, Callum; McGee, Sean
+<br/>
+2018/06, Monthly Notices of the Royal Astronomical Society, 476, 4753
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...859...76V" target="_blank">
 <i>Erratum: “GASP. VII. Signs of Gas Inflow onto a Lopsided Galaxy” (<A href="http://doi.org/10.3847/1538-4357/aa992c">2018, ApJ, 852, 94</A>)</i>
 </a>
@@ -5454,6 +5481,15 @@ Mesa-Delgado, A.; <strong>Zapata, L.</strong>; <strong>Henney, W. J.</strong>; P
 2016/07, The Astrophysical Journal, 825, L16
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.2882M" target="_blank">
+<i>Radiative transfer of HCN: interpreting observations of hyperfine anomalies</i>
+</a>
+<br/>
+Mullins, A. M.; <strong>Loughnane, R. M.</strong>; Redman, M. P.; Wiles, B.; Guegan, N.; Barrett, J.; Keto, E. R.
+<br/>
+2016/07, Monthly Notices of the Royal Astronomical Society, 459, 2882
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.3900D" target="_blank">
 <i>The interstellar medium in Andromeda's dwarf spheroidal galaxies - I. Content and origin of the interstellar dust</i>
 </a>
@@ -5875,6 +5911,15 @@ Poggianti, B. M.; Fasano, G.; Bettoni, D.; Cava, A.; Couch, W.; D'Onofrio, M.; D
 2016/00, The Universe of Digital Sky Surveys, 42, 177
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2016MNRAS.455.1428R" target="_blank">
+<i>Complex molecules in the W51 North region</i>
+</a>
+<br/>
+Rong, Jialei; Qin, Sheng-Li; <strong>Zapata, Luis A.</strong>; Wu, Yuefang; Liu, Tie; Zhang, Chengpeng; Peng, Yaping; Zhang, Li; Liu, Ying
+<br/>
+2016/01, Monthly Notices of the Royal Astronomical Society, 455, 1428
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2016ASSP...42...85C" target="_blank">
 <i>The Environment of Barred Galaxies Revisited</i>
 </a>
@@ -6172,6 +6217,32 @@ Fontani, F.; Caselli, P.; <strong>Palau, A.</strong>; Bizzocchi, L.; Ceccarelli,
 2015/08, The Astrophysical Journal, 808, L46
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2015ApJ...808L...1A" target="_blank">
+<i>The 2014 ALMA Long Baseline Campaign: An Overview</i>
+</a>
+<br/>
+ALMA Partnership; Fomalont, E. B.; Vlahakis, C.; Corder, S.; Remijan, A.; Barkats, D.; Lucas, R.; Hunter, T. R.; Brogan, C. L.; Asaki, Y.; Matsushita, S.; Dent, W. R. F.; Hills, R. E.; Phillips, N.; Richards, A. M. S.; Cox, P.; Amestica, R.; Broguiere, D.; Cotton, W.; Hales, A. S.; <span id="2015ApJ...808L...1A.authors" style="display: none;">Hiriart, R.; Hirota, A.; Hodge, J. A.; Impellizzeri, C. M. V.; Kern, J.; Kneissl, R.; Liuzzo, E.; Marcelino, N.; Marson, R.; Mignano, A.; Nakanishi, K.; Nikolic, B.; Perez, J. E.; Pérez, L. M.; Toledo, I.; Aladro, R.; Butler, B.; Cortes, J.; Cortes, P.; Dhawan, V.; Di Francesco, J.; Espada, D.; Galarza, F.; Garcia-Appadoo, D.; Guzman-Ramirez, L.; Humphreys, E. M.; Jung, T.; Kameno, S.; Laing, R. A.; Leon, S.; Mangum, J.; Marconi, G.; Nagai, H.; Nyman, L. -A.; Radiszcz, M.; Rodón, J. A.; Sawada, T.; Takahashi, S.; Tilanus, R. P. J.; van Kempen, T.; Vila Vilaro, B.; Watson, L. C.; Wiklind, T.; Gueth, F.; Tatematsu, K.; Wootten, A.; Castro-Carrizo, A.; Chapillon, E.; Dumas, G.; de Gregorio-Monsalvo, I.; Francke, H.; Gallardo, J.; Garcia, J.; Gonzalez, S.; Hibbard, J. E.; Hill, T.; Kaminski, T.; Karim, A.; Krips, M.; Kurono, Y.; Lopez, C.; Martin, S.; Maud, L.; Morales, F.; Pietu, V.; Plarre, K.; Schieven, G.; Testi, L.; Videla, L.; Villard, E.; Whyborn, N.; Zwaan, M. A.; Alves, F.; Andreani, P.; Avison, A.; Barta, M.; Bedosti, F.; Bendo, G. J.; Bertoldi, F.; Bethermin, M.; Biggs, A.; Boissier, J.; Brand, J.; Burkutean, S.; Casasola, V.; Conway, J.; Cortese, L.; Dabrowski, B.; Davis, T. A.; Diaz Trigo, M.; Fontani, F.; Franco-Hernandez, R.; Fuller, G.; <strong>Galvan Madrid, R.</strong>; Giannetti, A.; Ginsburg, A.; Graves, S. F.; Hatziminaoglou, E.; Hogerheijde, M.; Jachym, P.; Jimenez Serra, I.; Karlicky, M.; Klaasen, P.; Kraus, M.; Kunneriath, D.; Lagos, C.; Longmore, S.; Leurini, S.; Maercker, M.; Magnelli, B.; Marti Vidal, I.; Massardi, M.; Maury, A.; Muehle, S.; Muller, S.; Muxlow, T.; O'Gorman, E.; Paladino, R.; Petry, D.; Pineda, J. E.; Randall, S.; Richer, J. S.; Rossetti, A.; Rushton, A.; Rygl, K.; Sanchez Monge, A.; Schaaf, R.; Schilke, P.; Stanke, T.; Schmalzl, M.; Stoehr, F.; Urban, S.; van Kampen, E.; Vlemmings, W.; Wang, K.; Wild, W.; Yang, Y.; Iguchi, S.; Hasegawa, T.; Saito, M.; Inatani, J.; Mizuno, N.; Asayama, S.; Kosugi, G.; Morita, K. -I.; Chiba, K.; Kawashima, S.; Okumura, S. K.; Ohashi, N.; Ogasawara, R.; Sakamoto, S.; Noguchi, T.; Huang, Y. -D.; Liu, S. -Y.; Kemper, F.; Koch, P. M.; Chen, M. -T.; Chikada, Y.; Hiramatsu, M.; Iono, D.; Shimojo, M.; Komugi, S.; Kim, J.; Lyo, A. -R.; Muller, E.; Herrera, C.; Miura, R. E.; Ueda, J.; Chibueze, J.; Su, Y. -N.; Trejo-Cruz, A.; Wang, K. -S.; Kiuchi, H.; Ukita, N.; Sugimoto, M.; Kawabe, R.; Hayashi, M.; Miyama, S.; Ho, P. T. P.; Kaifu, N.; Ishiguro, M.; Beasley, A. J.; Bhatnagar, S.; Braatz, J. A., III; Brisbin, D. G.; Brunetti, N.; Carilli, C.; Crossley, J. H.; D'Addario, L.; Donovan Meyer, J. L.; Emerson, D. T.; Evans, A. S.; Fisher, P.; Golap, K.; Griffith, D. M.; Hale, A. E.; Halstead, D.; Hardy, E. J.; Hatz, M. C.; Holdaway, M.; Indebetouw, R.; Jewell, P. R.; Kepley, A. A.; Kim, D. -C.; Lacy, M. D.; Leroy, A. K.; Liszt, H. S.; Lonsdale, C. J.; Matthews, B.; McKinnon, M.; Mason, B. S.; Moellenbrock, G.; Moullet, A.; Myers, S. T.; Ott, J.; Peck, A. B.; Pisano, J.; Radford, S. J. E.; Randolph, W. T.; Rao Venkata, U.; Rawlings, M. G.; Rosen, R.; Schnee, S. L.; Scott, K. S.; Sharp, N. K.; Sheth, K.; Simon, R. S.; Tsutsumi, T.; Wood, S. J.</span><span id="2015ApJ...808L...1A.button"></span>
+<script>
+toggleAuthors('2015ApJ...808L...1A', 249, 0);
+</script>
+
+<br/>
+2015/07, The Astrophysical Journal, 808, L1
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2015ApJ...807..150A" target="_blank">
+<i>230 GHz VLBI Observations of M87: Event-horizon-scale Structure during an Enhanced Very-high-energy γ-Ray State in 2012</i>
+</a>
+<br/>
+Akiyama, Kazunori; Lu, Ru-Sen; Fish, Vincent L.; Doeleman, Sheperd S.; Broderick, Avery E.; Dexter, Jason; Hada, Kazuhiro; Kino, Motoki; Nagai, Hiroshi; Honma, Mareki; Johnson, Michael D.; Algaba, Juan C.; Asada, Keiichi; Brinkerink, Christiaan; Blundell, Ray; Bower, Geoffrey C.; Cappallo, Roger; Crew, Geoffrey B.; Dexter, Matt; <strong>Dzib, Sergio A.</strong>; <span id="2015ApJ...807..150A.authors" style="display: none;">Freund, Robert; Friberg, Per; Gurwell, Mark; Ho, Paul T. P.; Inoue, Makoto; Krichbaum, Thomas P.; <strong>Loinard, Laurent</strong>; MacMahon, David; Marrone, Daniel P.; Moran, James M.; Nakamura, Masanori; Nagar, Neil M.; <strong>Ortiz-Leon, Gisela</strong>; Plambeck, Richard; Pradel, Nicolas; Primiani, Rurik A.; Rogers, Alan E. E.; Roy, Alan L.; SooHoo, Jason; Tavares, Jonathan-León; Tilanus, Remo P. J.; Titus, Michael; Wagner, Jan; Weintroub, Jonathan; Yamaguchi, Paul; Young, Ken H.; Zensus, Anton; Ziurys, Lucy M.</span><span id="2015ApJ...807..150A.button"></span>
+<script>
+toggleAuthors('2015ApJ...807..150A', 48, 0);
+</script>
+
+<br/>
+2015/07, The Astrophysical Journal, 807, 150
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2015ApJ...807...55M" target="_blank">
 <i>First Detection of Thermal Radiojets in a Sample of Proto-brown Dwarf Candidates</i>
 </a>
@@ -6448,6 +6519,15 @@ Fontani, F.; Busquet, G.; <strong>Palau, Aina</strong>; Caselli, P.; Sánchez-Mo
 Klaassen, P. D.; Johnston, K. G.; Leurini, S.; <strong>Zapata, L. A.</strong>
 <br/>
 2015/03, Astronomy and Astrophysics, 575, A54
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2015MNRAS.447.1826Z" target="_blank">
+<i>ALMA reveals a candidate hot and compact disc around the O-type protostar IRAS 16547-4247</i>
+</a>
+<br/>
+<strong>Zapata, Luis A.</strong>; <strong>Palau, Aina</strong>; <strong>Galván-Madrid, Roberto</strong>; <strong>Rodríguez, Luis F.</strong>; Garay, Guido; Moran, James M.; Franco-Hernández, Ramiro
+<br/>
+2015/02, Monthly Notices of the Royal Astronomical Society, 447, 1826
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2015MNRAS.447..817B" target="_blank">
@@ -6864,6 +6944,15 @@ Cabrera-Ziri, I.; Bastian, N.; Davies, B.; Magris, G.; <strong>Bruzual, G.</stro
 2014/07, The Astrophysical Journal, 790, 80
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2014ApJ...790...49K" target="_blank">
+<i>The Gould's Belt Very Large Array Survey. III. The Orion Region</i>
+</a>
+<br/>
+Kounkel, Marina; Hartmann, Lee; <strong>Loinard, Laurent</strong>; Mioduszewski, Amy J.; Dzib, Sergio A.; <strong>Ortiz-León, Gisela N.</strong>; <strong>Rodríguez, Luis F.</strong>; <strong>Pech, Gerardo</strong>; <strong>Rivera, Juana L.</strong>; Torres, Rosa M.; Boden, Andrew F.; Evans, Neal J., II; Briceño, Cesar; Tobin, John
+<br/>
+2014/07, The Astrophysical Journal, 790, 49
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2014ApJ...789...38G" target="_blank">
 <i>The Thermal Pressure Distribution of a Simulated Cold Neutral Medium</i>
 </a>
@@ -6880,6 +6969,15 @@ Cabrera-Ziri, I.; Bastian, N.; Davies, B.; Magris, G.; <strong>Bruzual, G.</stro
 <strong>Rodríguez, L. F.</strong>; <strong>Carrasco-González, C.</strong>; Montes, G.; Tapia, M.
 <br/>
 2014/07, The Astronomical Journal, 148, 20
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2014A&A...567L...5D" target="_blank">
+<i>High angular resolution 7 mm images toward the UC HII region W3(OH)</i>
+</a>
+<br/>
+Dzib, S. A.; <strong>Rodríguez, L. F.</strong>; <strong>Medina, S. -N. X.</strong>; <strong>Loinard, L.</strong>; <strong>Masqué, J. M.</strong>; <strong>Kurtz, S.</strong>; Qiu, K.
+<br/>
+2014/07, Astronomy and Astrophysics, 567, L5
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2014ApJ...788..162D" target="_blank">
@@ -7107,6 +7205,15 @@ Urquhart, J. S.; Thompson, M. A.; Moore, T. J. T.; Purcell, C. R.; Hoare, M. G.;
 2013/10, Monthly Notices of the Royal Astronomical Society, 435, 400
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2013MNRAS.435.1701C" target="_blank">
+<i>Molecular cloud evolution - V. Cloud destruction by stellar feedback</i>
+</a>
+<br/>
+<strong>Colín, Pedro</strong>; <strong>Vázquez-Semadeni, Enrique</strong>; <strong>Gómez, Gilberto C.</strong>
+<br/>
+2013/10, Monthly Notices of the Royal Astronomical Society, 435, 1701
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...775..114M" target="_blank">
 <i>Curved Walls: Grain Growth, Settling, and Composition Patterns in T Tauri Disk Dust Sublimation Fronts</i>
 </a>
@@ -7143,6 +7250,15 @@ Tafoya, D.; <strong>Loinard, L.</strong>; Fonfría, J. P.; Vlemmings, W. H. T.; 
 2013/08, Astronomy and Astrophysics, 556, A35
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...772..151D" target="_blank">
+<i>The Compact, Time-variable Radio Source Projected Inside W3(OH): Evidence for a Photoevaporated Disk?</i>
+</a>
+<br/>
+<strong>Dzib, Sergio A.</strong>; <strong>Rodríguez-Garza, Carolina B.</strong>; <strong>Rodríguez, Luis F.</strong>; <strong>Kurtz, Stan E.</strong>; <strong>Loinard, Laurent</strong>; <strong>Zapata, Luis A.</strong>; <strong>Lizano, Susana</strong>
+<br/>
+2013/08, The Astrophysical Journal, 772, 151
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2013ApJS..207...12R" target="_blank">
 <i>Methyl Cyanide Observations toward Massive Protostars</i>
 </a>
@@ -7150,6 +7266,19 @@ Tafoya, D.; <strong>Loinard, L.</strong>; Fonfría, J. P.; Vlemmings, W. H. T.; 
 Rosero, V.; Hofner, P.; <strong>Kurtz, S.</strong>; Bieging, J.; Araya, E. D.
 <br/>
 2013/07, The Astrophysical Journal Supplement Series, 207, 12
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...772...13L" target="_blank">
+<i>Fine-scale Structure of the Quasar 3C 279 Measured with 1.3 mm Very Long Baseline Interferometry</i>
+</a>
+<br/>
+Lu, Ru-Sen; Fish, Vincent L.; Akiyama, Kazunori; Doeleman, Sheperd S.; Algaba, Juan C.; Bower, Geoffrey C.; Brinkerink, Christiaan; Chamberlin, Richard; Crew, Geoffrey; Cappallo, Roger J.; Dexter, Matt; Freund, Robert; Friberg, Per; Gurwell, Mark A.; Ho, Paul T. P.; Honma, Mareki; Inoue, Makoto; Jorstad, Svetlana G.; Krichbaum, Thomas P.; <strong>Loinard, Laurent</strong>; <span id="2013ApJ...772...13L.authors" style="display: none;">MacMahon, David; Marrone, Daniel P.; Marscher, Alan P.; Moran, James M.; Plambeck, Richard; Pradel, Nicolas; Primiani, Rurik; Tilanus, Remo P. J.; Titus, Michael; Weintroub, Jonathan; Wright, Melvyn; Young, Ken H.; Ziurys, Lucy M.</span><span id="2013ApJ...772...13L.button"></span>
+<script>
+toggleAuthors('2013ApJ...772...13L', 33, 0);
+</script>
+
+<br/>
+2013/07, The Astrophysical Journal, 772, 13
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...771...48T" target="_blank">
@@ -7296,6 +7425,15 @@ Trinidad, M. A.; Curiel, S.; Estalella, R.; Cantó, J.; Raga, A.; Torrelles, J. 
 2013/04, Monthly Notices of the Royal Astronomical Society, 430, 1309
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2013A&A...552A..51D" target="_blank">
+<i>A very long baseline interferometry detection of the class I protostar IRS 5 in Corona Australis</i>
+</a>
+<br/>
+Deller, A. T.; Forbrich, J.; <strong>Loinard, L.</strong>
+<br/>
+2013/04, Astronomy and Astrophysics, 552, A51
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...767L...2M" target="_blank">
 <i>Mineral Processing by Short Circuits in Protoplanetary Disks</i>
 </a>
@@ -7321,6 +7459,15 @@ McNally, Colin P.; Hubbard, Alexander; Mac Low, Mordecai-Mark; Ebel, Denton S.; 
 <strong>Sánchez-Monge, Álvaro</strong>; <strong>Kurtz, Stan</strong>; Palau, Aina; Estalella, Robert; Shepherd, Debra; <strong>Lizano, Susana</strong>; Franco, José; Garay, Guido
 <br/>
 2013/04, The Astrophysical Journal, 766, 114
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2013MNRAS.430L..10L" target="_blank">
+<i>ALMA and VLA observations of the outflows in IRAS 16293-2422.</i>
+</a>
+<br/>
+<strong>Loinard, L.</strong>; <strong>Zapata, L. A.</strong>; <strong>Rodriguez, L. F.</strong>; <strong>Pech, G.</strong>; Chandler, C. J.; Brogan, C. L.; Wilner, D. J.; Ho, P. T. P.; Parise, B.; Hartmann, L. W.; Zhu, Z.; Takahashi, S.; Trejo, A.
+<br/>
+2013/03, Monthly Notices of the Royal Astronomical Society, 430, L10
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2013MNRAS.429.3584H" target="_blank">
@@ -7388,6 +7535,15 @@ Martínez-García, Eric E.; <strong>González-Lópezlira, Rosa A.</strong>
 <strong>Zapata, Luis A.</strong>; <strong>Loinard, Laurent</strong>; <strong>Rodríguez, Luis F.</strong>; <strong>Hernández-Hernández, Vicente</strong>; Takahashi, Satoko; Trejo, Alfonso; Parise, Bérengère
 <br/>
 2013/02, The Astrophysical Journal, 764, L14
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...763..139D" target="_blank">
+<i>Multi-epoch Very Long Baseline Array Observations of the Compact Wind-collision Region in the Quadruple System Cyg OB2 #5</i>
+</a>
+<br/>
+<strong>Dzib, Sergio A.</strong>; <strong>Rodríguez, Luis F.</strong>; <strong>Loinard, Laurent</strong>; Mioduszewski, Amy J.; <strong>Ortiz-León, Gisela N.</strong>; <strong>Araudo, Anabella T.</strong>
+<br/>
+2013/02, The Astrophysical Journal, 763, 139
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...762..120P" target="_blank">
@@ -7584,6 +7740,15 @@ Raga, A. C.; Cantó, J.; <strong>Rodríguez, L. F.</strong>; Velázquez, P. F.
 2012/08, The Astrophysical Journal, 755, 77
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2012ApJ...755..152R" target="_blank">
+<i>Compact Radio Sources in M17</i>
+</a>
+<br/>
+<strong>Rodríguez, Luis F.</strong>; <strong>González, Ricardo F.</strong>; Montes, Gabriela; Asiri, Hassan M.; Raga, Alejandro C.; Cantó, Jorge
+<br/>
+2012/08, The Astrophysical Journal, 755, 152
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2012A&A...544L..19P" target="_blank">
 <i>Mid-J CO emission from the Orion BN/KL explosive outflow</i>
 </a>
@@ -7732,6 +7897,24 @@ toggleAuthors('2012ApJ...749L..24A', 21, 0);
 2012/04, The Astrophysical Journal, 748, 101
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2012ApJ...747...17B" target="_blank">
+<i>A Surprising Dynamical Mass for V773 Tau B</i>
+</a>
+<br/>
+Boden, Andrew F.; Torres, Guillermo; Duchêne, Gaspard; Konopacky, Quinn; Ghez, A. M.; <strong>Torres, Rosa M.</strong>; <strong>Loinard, Laurent</strong>
+<br/>
+2012/03, The Astrophysical Journal, 747, 17
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2012ApJ...747...18T" target="_blank">
+<i>VLBA Determination of the Distance to nearby Star-forming Regions. V. Dynamical Mass, Distance, and Radio Structure of V773 Tau A</i>
+</a>
+<br/>
+Torres, Rosa M.; <strong>Loinard, Laurent</strong>; Mioduszewski, Amy J.; Boden, Andrew F.; Franco-Hernández, Ramiro; Vlemmings, Wouter H. T.; <strong>Rodríguez, Luis F.</strong>
+<br/>
+2012/03, The Astrophysical Journal, 747, 18
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2012ApJ...747..139N" target="_blank">
 <i>Mid-Infrared Variability of the Binary System CS Cha</i>
 </a>
@@ -7757,6 +7940,15 @@ Espaillat, C.; Ingleby, L.; Hernández, J.; Furlan, E.; <strong>D'Alessio, P.</s
 <strong>Manjarrez, G.</strong>; Gómez, J. F.; de Gregorio-Monsalvo, I.
 <br/>
 2012/02, Monthly Notices of the Royal Astronomical Society, 419, 3338
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2012MNRAS.420..279R" target="_blank">
+<i>The magnetic field of the H II region NGC 6334A from Faraday rotation</i>
+</a>
+<br/>
+<strong>Rodríguez, L. F.</strong>; <strong>Gómez, Y.</strong>; Tafoya, D.
+<br/>
+2012/02, Monthly Notices of the Royal Astronomical Society, 420, 279
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2012MNRAS.420.1457H" target="_blank">
@@ -7951,6 +8143,15 @@ Avila-Reese, V.; <strong>Colín, P.</strong>; González-Samaniego, A.; Valenzuel
 <strong>Toalá, J. A.</strong>; <strong>Arthur, S. J.</strong>
 <br/>
 2011/08, The Astrophysical Journal, 737, 100
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2011ApJ...737...30O" target="_blank">
+<i>The Non-thermal, Time-variable Radio Emission from Cyg OB2 #5: A Wind-collision Region</i>
+</a>
+<br/>
+<strong>Ortiz-León, Gisela N.</strong>; <strong>Loinard, Laurent</strong>; <strong>Rodríguez, Luis F.</strong>; Mioduszewski, Amy J.; <strong>Dzib, Sergio A.</strong>
+<br/>
+2011/08, The Astrophysical Journal, 737, 30
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..195....3F" target="_blank">
@@ -8462,6 +8663,15 @@ Bik, A.; Puga, E.; Waters, L. B. F. M.; Horrobin, M.; Henning, Th.; Vasyunina, T
 2010/04, The Astrophysical Journal, 713, 423
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2010ApJ...712.1403P" target="_blank">
+<i>Confirmation of a Recent Bipolar Ejection in the Very Young Hierarchical Multiple System IRAS 16293-2422</i>
+</a>
+<br/>
+<strong>Pech, Gerardo</strong>; <strong>Loinard, Laurent</strong>; Chandler, Claire J.; <strong>Rodríguez, Luis F.</strong>; <strong>D'Alessio, Paola</strong>; Brogan, Crystal L.; Wilner, David J.; Ho, Paul T. P.
+<br/>
+2010/04, The Astrophysical Journal, 712, 1403
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2010ApJ...711..881H" target="_blank">
 <i>Can Solid Body Destruction Explain Abundance Discrepancies in Planetary Nebulae?</i>
 </a>
@@ -8478,6 +8688,15 @@ Bik, A.; Puga, E.; Waters, L. B. F. M.; Horrobin, M.; Henning, Th.; Vasyunina, T
 Peters, Thomas; Banerjee, Robi; Klessen, Ralf S.; Mac Low, Mordecai-Mark; <strong>Galván-Madrid, Roberto</strong>; Keto, Eric R.
 <br/>
 2010/03, The Astrophysical Journal, 711, 1017
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2010JKAS...43....9K" target="_blank">
+<i>Association of Infrared Dark Cloud Cores with YSOs: Starless or Starred IRDC Cores</i>
+</a>
+<br/>
+Kim, Gwanjeong; <strong>Lee, Chang Won</strong>; Kim, Jongsoo; Lee, Youngung; Ballesteros-Paredes, Javier; Myers, Philip C.; Kurtz, S.
+<br/>
+2010/02, Journal of Korean Astronomical Society, 43, 9
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2010MNRAS.402.1141G" target="_blank">
@@ -8674,6 +8893,15 @@ Banerjee, R.; <strong>Vázquez-Semadeni, E.</strong>; Hennebelle, P.; Klessen, R
 2009/09, Monthly Notices of the Royal Astronomical Society, 398, 1082
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2009MNRAS.398.1027K" target="_blank">
+<i>Dynamics of barred galaxies: effects of disc height</i>
+</a>
+<br/>
+Klypin, Anatoly; Valenzuela, Octavio; <strong>Colín, Pedro</strong>; Quinn, Thomas
+<br/>
+2009/09, Monthly Notices of the Royal Astronomical Society, 398, 1027
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2009ApJ...702L.182A" target="_blank">
 <i>Migration of Extrasolar Planets: Effects from X-wind Accretion Disks</i>
 </a>
@@ -8735,6 +8963,15 @@ Zapata, Luis A.; Ho, Paul T. P.; Schilke, Peter; <strong>Rodríguez, Luis F.</st
 Araya, Esteban D.; <strong>Kurtz, Stan</strong>; Hofner, Peter; Linz, Hendrik
 <br/>
 2009/06, The Astrophysical Journal, 698, 1321
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2009ApJ...698..242T" target="_blank">
+<i>VLBA Determination of the Distance to Nearby Star-Forming Regions. III. HP TAU/G2 and the Three-Dimensional Structure of Taurus</i>
+</a>
+<br/>
+<strong>Torres, Rosa M.</strong>; <strong>Loinard, Laurent</strong>; Mioduszewski, Amy J.; <strong>Rodríguez, Luis F.</strong>
+<br/>
+2009/06, The Astrophysical Journal, 698, 242
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2009AJ....137.4330D" target="_blank">
@@ -9214,6 +9451,15 @@ Araya, E.; Hofner, P.; <strong>Kurtz, S.</strong>; Olmi, L.; Linz, H.
 2008/03, The Astrophysical Journal, 675, 420
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2008ApJ...675L..29L" target="_blank">
+<i>A Preliminary VLBA Distance to the Core of Ophiuchus, with an Accuracy of 4%</i>
+</a>
+<br/>
+<strong>Loinard, Laurent</strong>; <strong>Torres, Rosa M.</strong>; Mioduszewski, Amy J.; <strong>Rodríguez, Luis F.</strong>
+<br/>
+2008/03, The Astrophysical Journal, 675, L29
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2008ApJ...674L..33G" target="_blank">
 <i>Time Variation in G24.78+0.08 A1: Evidence for an Accreting Hypercompact H II Region?</i>
 </a>
@@ -9258,6 +9504,15 @@ Keto, Eric; Zhang, Qizhou; <strong>Kurtz, Stanley</strong>
 <br/>
 2008/01, Astronomy and Astrophysics, 477, 373
 </p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2008ApJ...673..203C" target="_blank">
+<i>On the Structure of Dark Matter Halos at the Damping Scale of the Power Spectrum with and without Relict Velocities</i>
+</a>
+<br/>
+<strong>Colín, Pedro</strong>; Valenzuela, Octavio; Avila-Reese, Vladimir
+<br/>
+2008/01, The Astrophysical Journal, 673, 203
+</p></li>
 </ol>
 </div>
 <div class="tab-pane" id="2007">
@@ -9298,6 +9553,33 @@ Velázquez, Pablo F.; <strong>Gómez, Yolanda</strong>; Esquivel, Alejandro; Rag
 Schnee, S.; Caselli, P.; Goodman, A.; Arce, H. G.; <strong>Ballesteros-Paredes, J.</strong>; Kuchibhotla, K.
 <br/>
 2007/12, The Astrophysical Journal, 671, 1839
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2007ApJ...671.1813T" target="_blank">
+<i>VLBA Determination of the Distance to Nearby Star-forming Regions. II. Hubble 4 and HDE 283572 in Taurus</i>
+</a>
+<br/>
+<strong>Torres, Rosa M.</strong>; <strong>Loinard, Laurent</strong>; Mioduszewski, Amy J.; <strong>Rodríguez, Luis F.</strong>
+<br/>
+2007/12, The Astrophysical Journal, 671, 1813
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2007ApJ...670.1353L" target="_blank">
+<i>New Radio Sources and the Composite Structure of Component B in the Very Young Protostellar System IRAS 16293-2422</i>
+</a>
+<br/>
+<strong>Loinard, Laurent</strong>; Chandler, Claire J.; <strong>Rodríguez, Luis F.</strong>; <strong>D'Alessio, Paola</strong>; Brogan, Crystal L.; Wilner, David J.; Ho, Paul T. P.
+<br/>
+2007/12, The Astrophysical Journal, 670, 1353
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2007ApJ...671..546L" target="_blank">
+<i>VLBA Determination of the Distance to Nearby Star-forming Regions. I. The Distance to T Tauri with 0.4% Accuracy</i>
+</a>
+<br/>
+<strong>Loinard, Laurent</strong>; <strong>Torres, Rosa M.</strong>; Mioduszewski, Amy J.; <strong>Rodríguez, Luis F.</strong>; <strong>González-Lópezlira, Rosa A.</strong>; <strong>Lachaume, Régis</strong>; Vázquez, Virgilio; González, Erandy
+<br/>
+2007/12, The Astrophysical Journal, 671, 546
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1050A" target="_blank">
@@ -9489,6 +9771,15 @@ Hughes, A. M.; Wilner, D. J.; Calvet, N.; <strong>D'Alessio, P.</strong>; Clauss
 2007/07, The Astrophysical Journal, 664, 536
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2007ApJ...663..824R" target="_blank">
+<i>A Comparison between Anomalous 6 cm H<SUB>2</SUB>CO Absorption and CO(1-0) Emission in the L1204/S140 Region</i>
+</a>
+<br/>
+<strong>Rodríguez, Mónica Ivette</strong>; Wiklind, Tommy; Allen, Ronald J.; <strong>Escalante, Vladimir</strong>; <strong>Loinard, Laurent</strong>
+<br/>
+2007/07, The Astrophysical Journal, 663, 824
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2007A&A...469..587L" target="_blank">
 <i>Resolving the B[e] star Hen 3-1191 at 10 μm with VLTI/MIDI</i>
 </a>
@@ -9597,6 +9888,15 @@ Hofner, P.; Cesaroni, R.; Olmi, L.; <strong>Rodríguez, L. F.</strong>; Martí, 
 2007/04, Revista Mexicana de Astronomia y Astrofisica, 43, 123
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2007ApJ...657..916L" target="_blank">
+<i>On the Nature of the Extended Radio Emission Surrounding T Tauri South</i>
+</a>
+<br/>
+<strong>Loinard, Laurent</strong>; <strong>Rodríguez, Luis F.</strong>; <strong>D'Alessio, Paola</strong>; <strong>Rodríguez, Mónica I.</strong>; <strong>González, Ricardo F.</strong>
+<br/>
+2007/03, The Astrophysical Journal, 657, 916
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2007AJ....133..845W" target="_blank">
 <i>Asymmetry and Variability in the HH 30 Circumstellar Disk</i>
 </a>
@@ -9690,6 +9990,15 @@ Maulbetsch, Christian; Avila-Reese, Vladimir; <strong>Colín, Pedro</strong>; Go
 <strong>Zapata, Luis A.</strong>; Ho, Paul T. P.; <strong>Rodríguez, Luis F.</strong>; O'Dell, C. R.; Zhang, Qizhou; Muench, August
 <br/>
 2006/12, The Astrophysical Journal, 653, 398
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2006ApJ...652.1230R" target="_blank">
+<i>Anomalous H<SUB>2</SUB>CO Absorption toward the Galactic Anticenter: A Blind Search for Dense Molecular Clouds</i>
+</a>
+<br/>
+<strong>Rodríguez, Mónica Ivette</strong>; Allen, Ronald J.; <strong>Loinard, Laurent</strong>; Wiklind, Tommy
+<br/>
+2006/12, The Astrophysical Journal, 652, 1230
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2006AJ....132.2376G" target="_blank">
@@ -9888,6 +10197,15 @@ Carigi, Leticia; <strong>Colín, Pedro</strong>; Peimbert, Manuel
 <strong>Rodríguez-Rico, C. A.</strong>; Goss, W. M.; Zhao, J. -H.; <strong>Gómez, Y.</strong>; Anantharamaiah, K. R.
 <br/>
 2006/06, The Astrophysical Journal, 644, 914
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2006ApJ...644..687C" target="_blank">
+<i>Bars and Cold Dark Matter Halos</i>
+</a>
+<br/>
+<strong>Colín, Pedro</strong>; Valenzuela, O.; Klypin, A.
+<br/>
+2006/06, The Astrophysical Journal, 644, 687
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2006ApJ...643L..33A" target="_blank">
@@ -10372,6 +10690,15 @@ Klessen, Ralf S.; <strong>Ballesteros-Paredes, Javier</strong>; <strong>Vázquez
 2005/02, The Astrophysical Journal, 620, 786
 </p></li>
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2005ApJ...619L.179L" target="_blank">
+<i>Multiepoch VLBA Observations of T Tauri South</i>
+</a>
+<br/>
+<strong>Loinard, Laurent</strong>; Mioduszewski, Amy J.; <strong>Rodríguez, Luis F.</strong>; <strong>González, Rosa A.</strong>; <strong>Rodríguez, Mónica I.</strong>; <strong>Torres, Rosa M.</strong>
+<br/>
+2005/02, The Astrophysical Journal, 619, L179
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2005A&A...431..547P" target="_blank">
 <i>HDO abundance in the envelope of the solar-type protostar IRAS 16293-2422</i>
 </a>
@@ -10585,6 +10912,15 @@ Prieur, J. -L.; <strong>Avila, R.</strong>; Daigne, G.; Vernin, J.
 <strong>Tafoya, D.</strong>; <strong>Gómez, Y.</strong>; <strong>Rodríguez, L. F.</strong>
 <br/>
 2004/08, The Astrophysical Journal, 610, 827
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2004Ap&SS.292..369O" target="_blank">
+<i>A Model to Test the Internal Structure of the G31.41+0.31 Hot Molecular Core</i>
+</a>
+<br/>
+Osorio, Mayra; Anglada, Guillem; <strong>and, Susana Lizano</strong>; <strong>D'Alessio, Paola</strong>
+<br/>
+2004/08, Astrophysics and Space Science, 292, 369
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2004Ap&SS.292..187V" target="_blank">
