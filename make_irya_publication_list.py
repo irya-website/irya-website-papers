@@ -279,12 +279,16 @@ def query_years(years: list) -> tuple[str, str]:
 
 
 def dump_nonstandard():
+    nauthors = len(nonstandard_papers)
+    # Count unique bibcodes
+    npapers = len(set([_[0] for _ in nonstandard_papers]))
+
     s = dedent(
         f"""\
         ############################################################
         # Non-standard spellings in IRyA affiliations 2003-present
-        #        
-        # N = {len(nonstandard_papers)}
+        #
+        # Total: {nauthors} authors in {npapers} papers
         ############################################################
         """
     )

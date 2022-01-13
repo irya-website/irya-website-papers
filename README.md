@@ -49,12 +49,12 @@ Diagnostics of the mis-spelled variants can be written to a file by giving a sec
 ```sh
 python make-irya-publication-list.py OUTPUT_FOLDER variant
 ```
-This will write a file `nonstandard_variants.txt` that looks like this:
+This will write a file `nonstandard_variants.txt` with the following format:
 ```
 ############################################################
 # Non-standard spellings in IRyA affiliations 2003-present
-#        
-# N = 98
+#
+# Total: 98 authors in 36 papers
 ############################################################
 
 2021MNRAS.000.0000C
