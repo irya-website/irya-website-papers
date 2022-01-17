@@ -16,11 +16,11 @@ function toggleAuthors(bibcode, numAuthors, longList) {
 };
 </script>
 <li><p>
-<a href="https://ui.adsabs.harvard.edu/abs/2022A&A...657A..30T" target="_blank">
-<i>W51 North: A protocluster emerging out of a thermally inhibited fragmenting cloud</i>
+<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.2654V" target="_blank">
+<i>The building up of observed stellar scaling relations of massive galaxies and the connection to black hole growth in the TNG50 simulation</i>
 </a>
 <br/>
-<strong>Tang, Mengyao</strong>; <strong>Palau, Aina</strong>; <strong>Zapata, Luis A.</strong>; Qin, Sheng-Li
+Varma, S.; Huertas-Company, M.; Pillepich, A.; Nelson, D.; <strong>Rodriguez-Gomez, V.</strong>; Dekel, A.; Faber, S. M.; Iglesias-Navarro, P.; Koo, D. C.; Primack, J.
 <br/>
-2022/01, Astronomy and Astrophysics, 657, A30
+2022/01, Monthly Notices of the Royal Astronomical Society, 509, 2654
 </p></li>

@@ -22,6 +22,7 @@ import datetime
 import re
 from textwrap import dedent
 import html
+from typing import Tuple  # required for earlier python versions
 
 # Third-party library
 # Install with "pip install ads"
@@ -188,7 +189,7 @@ function toggleAuthors(bibcode, numAuthors, longList) {
 """
 
 
-def query_years(years: list) -> tuple[str, str]:
+def query_years(years: list) -> Tuple[str, str]:
     """Execute all the queries and construct the pages"""
 
     pub_list_page = script_header

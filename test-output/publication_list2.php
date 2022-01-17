@@ -45,6 +45,28 @@ function toggleAuthors(bibcode, numAuthors, longList) {
 <h4 style="text-indent: 10px;">Publications 2022</h4>
 <ol>      
 <li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.2654V" target="_blank">
+<i>The building up of observed stellar scaling relations of massive galaxies and the connection to black hole growth in the TNG50 simulation</i>
+</a>
+<br/>
+Varma, S.; Huertas-Company, M.; Pillepich, A.; Nelson, D.; <strong>Rodriguez-Gomez, V.</strong>; Dekel, A.; Faber, S. M.; Iglesias-Navarro, P.; Koo, D. C.; Primack, J.
+<br/>
+2022/01, Monthly Notices of the Royal Astronomical Society, 509, 2654
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...924...64I" target="_blank">
+<i>GASP XXXVIII: The LOFAR-MeerKAT-VLA View on the Nonthermal Side of a Jellyfish Galaxy</i>
+</a>
+<br/>
+Ignesti, Alessandro; Vulcani, Benedetta; Poggianti, Bianca M.; Paladino, Rosita; Shimwell, Timothy; Healy, Julia; Gitti, Myriam; Bacchini, Cecilia; Moretti, Alessia; Radovich, Mario; van Weeren, Reinout J.; Roberts, Ian D.; Botteon, Andrea; Müller, Ancla; McGee, Sean; <strong>Fritz, Jacopo</strong>; Tomičić, Neven; Werle, Ariel; Mingozzi, Matilde; Gullieuszik, Marco; <span id="2022ApJ...924...64I.authors" style="display: none;">Verheijen, Marc</span><span id="2022ApJ...924...64I.button"></span>
+<script>
+toggleAuthors('2022ApJ...924...64I', 21, 0);
+</script>
+
+<br/>
+2022/01, The Astrophysical Journal, 924, 64
+</p></li>
+<li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2022A&A...657A..30T" target="_blank">
 <i>W51 North: A protocluster emerging out of a thermally inhibited fragmenting cloud</i>
 </a>
@@ -348,6 +370,15 @@ Méndez-Delgado, J. E.; <strong>Henney, W. J.</strong>; Esteban, C.; García-Roj
 Della Bruna, Lorenza; Adamo, Angela; Bik, Arjan; Fumagalli, Michele; Walterbos, Rene; Östlin, Göran; <strong>Bruzual, Gustavo</strong>; Calzetti, Daniela; Charlot, Stephane; Grasha, Kathryn; Smith, Linda J.; Thilker, David; Wofford, Aida
 <br/>
 2021/08, Astronomy and Astrophysics, 652, C6
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2021Galax...9...56P" target="_blank">
+<i>Message in a Bottle: Unveiling the Magneto-Ionic Complexity of AGNs through the Stokes QU-Fitting Technique</i>
+</a>
+<br/>
+<strong>Pasetto, Alice</strong>
+<br/>
+2021/08, Galaxies, 9, 56
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2021A&A...652A..99A" target="_blank">
@@ -804,6 +835,15 @@ Macías, E.; <strong>Guerra-Alvarado, O.</strong>; <strong>Carrasco-González, C
 Chu, You-Hua; <strong>Toalá, Jesús A.</strong>; Guerrero, Martín A.; Bauer, Florian F.; Bilikova, Jana; Gruendl, Robert A.
 <br/>
 2021/04, The Astrophysical Journal, 910, 119
+</p></li>
+<li><p>
+<a href="https://ui.adsabs.harvard.edu/abs/2021RMxAA..57...81M" target="_blank">
+<i>Exploring the Nature of Compact Radio Sources Associated to UCHII Regions</i>
+</a>
+<br/>
+Masqué, J. M.; Rodríguez, L. F.; Dzib, S. A.; Medina, S. N.; Loinard, L.; Trinidad, M. A.; <strong>Kurtz, S. E.</strong>; Rodríguez-Rico, C. A.
+<br/>
+2021/04, Revista Mexicana de Astronomia y Astrofisica, 57, 81
 </p></li>
 <li><p>
 <a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.502.4597H" target="_blank">
