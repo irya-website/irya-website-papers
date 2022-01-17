@@ -1,16 +1,18 @@
 """
-make-irya-publication-list.py
+make_irya_publication_list.py
 
-Creates the web page publication_list.php, which contains lists of
+Creates the web page publication_list2.php, which contains lists of
 refereed journal publications by members of the IRyA, organized by
 year from 2003 to the present.  Also creates the web page
-latest_publication.php with the most recent paper.
+latest_publication2.php with the most recent paper.
 
 Usage:
 
     make_irya_publication_list.py OUTPUT_FOLDER
 
 Files will be written to OUTPUT_FOLDER
+
+See accompanying file README.md for further options.
 
 Authors: Will Henney and Jane Arthur, 2022
 """
