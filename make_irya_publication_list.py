@@ -65,7 +65,7 @@ affstring = "(" + " OR ".join([f'"{_}"' for _ in irya_variants]) + ")"
 # To eliminate false positives in Italy, we have an auxiliary check on UNAM or Morelia
 unam_variants = [
     '"UNAM"',
-    '("Universidad" AND "Mexico")',
+    '"Mexico"',
     '"Morelia"',
 ]
 affstring2 = "(" + " OR ".join(unam_variants) + ")"
