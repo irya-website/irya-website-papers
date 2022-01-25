@@ -53,6 +53,9 @@ irya_variants = [
     "Radioastronomía y Astrofísica",
     "Radiostronomía y Astrofísica",  # Ricardo Gonzalez paper
     "Radioastronomí a y Astrofí sica",  # For Gustavo Bruzual 2021 paper
+    "Radioastronomía y Astrofísca",  # Stan paper
+    "Radioastronomía y Astrofsica",  # In anticipapation
+    "Radioastromomía y Astrofísica",  # Just in case
 ]
 
 # All except the first 3 variants are mis-spellings, about which we
