@@ -58,9 +58,18 @@ irya_variants = [
     "Radioastromomía y Astrofísica",  # Just in case
 ]
 
-drop_author = ["Rodriguez-Gomez"]
-
-drop_date = ["2022/06"]
+# List of cases where an author should not count as a member of the
+# IRyA after a given date, even if the paper lists IRyA as their
+# affiliation. Each element of the list should be a 2-tuple of
+# (author, date), where the date is in format "YYYY/MM".  In the case
+# where the surname is unique among IRyA authors, the name should just
+# be the surname. Otherwise, all possible variations of "last, first"
+# and "last, initial" should be listed separately, each with the same
+# date.
+drop_authors_after_dates = [
+    ("Rodriguez-Gomez", "2022/09"),
+    # ("Henney", "2022/04"),
+]
 
 # All except the first 3 variants are mis-spellings, about which we
 # may want to report diagnostics
@@ -110,17 +119,27 @@ def fuzzy(s, squeeze=True):
     return rslt
 
 
+def check_drop_author_on_date(author, date):
+    """True if author is due to be dropped on given date"""
+    for _author, _date in drop_authors_after_dates:
+        if _author in author and date > _date:
+            # Case that author should be dropped
+            return True
+    # Case that author should not be dropped
+    return False
+
+
 def mark_irya_affiliations(paper):
     """Highlight authors with IRyA affiliation
 
     This mutates the paper.author list, so should be called only once
     """
-    ym = "/".join(paper.pubdate.split("-")[:-1])
+    year_month = "/".join(paper.pubdate.split("-")[:-1])
     n_marked = 0
     for i, [author, affil] in enumerate(zip(paper.author, paper.aff)):
         for variant in irya_variants:
             if fuzzy(variant) in fuzzy(affil):
-                if drop_author[0] in author and ym > drop_date[0]:
+                if check_drop_author_on_date(author, year_month):
                     print("Dropped author event: ", author)
                 else:
                     paper.author[i] = f"<strong>{author}</strong>"
