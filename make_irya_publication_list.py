@@ -58,6 +58,12 @@ irya_variants = [
     "Radioastromomía y Astrofísica",  # Just in case
 ]
 
+block_author = [
+    "Rodriguez-Gomez"
+]
+
+block_date = ["2022/06"]
+
 # All except the first 3 variants are mis-spellings, about which we
 # may want to report diagnostics
 nonstandard_variants = irya_variants[3:]
@@ -111,11 +117,22 @@ def mark_irya_affiliations(paper):
 
     This mutates the paper.author list, so should be called only once
     """
+    lym = False
+    ym = "/".join(paper.pubdate.split("-")[:-1])
+    if ym > block_date[0]: lym = True
+    nirya = 0
+    nba = 0
     for i, [author, affil] in enumerate(zip(paper.author, paper.aff)):
         for variant in irya_variants:
             if fuzzy(variant) in fuzzy(affil):
-                paper.author[i] = f"<strong>{author}</strong>"
+                if block_author[0] in author and lym:   # and ym > block_date[0]:
+                    print('Blocked author event: ', author, lym)
+                    nba = nba + 1
+                else:
+                    paper.author[i] = f"<strong>{author}</strong>"
+                nirya = nirya + 1
                 break
+    return nirya, nba, lym
 
 
 def check_nonstandard_affiliations(paper):
@@ -256,8 +273,15 @@ def query_years(years: list) -> Tuple[str, str]:
         # Add a list item for each paper
         for paper in papers:
             check_nonstandard_affiliations(paper)
-            mark_irya_affiliations(paper)
-            pub_list_page += format_paper(paper)
+            nirya, nba, lym = mark_irya_affiliations(paper)
+            if nba == 0: 
+                pub_list_page += format_paper(paper)
+            elif nirya == 1 and lym:
+                print('blocked author single after blocked date',nba, nirya, lym)
+            else:
+                pub_list_page += format_paper(paper)
+                print('blocked author multi after blocked date',nba, nirya, lym)
+
             if paper.bibcode in DEBUG_BIBCODES:
                 print("*** DEBUG_BIBCODE", paper.bibcode)
                 print(paper.items())
@@ -337,3 +361,4 @@ if __name__ == "__main__":
 
     if DO_SAVE_VARIANTS:
         dump_nonstandard()
+        
