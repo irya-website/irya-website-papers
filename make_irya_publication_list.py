@@ -292,9 +292,6 @@ def query_years(years: list) -> Tuple[str, str]:
 
             if n_marked == 0:
                 print("Paper not included due to all irya authors being on drop list")
-                # Also remove this paper from the list, so it has no
-                # chance of showing up as the latest publication
-                papers.remove(paper)
                 continue
 
             # Paper has passed the checks so add it to page and to
