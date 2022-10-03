@@ -285,15 +285,22 @@ def query_years(years: list) -> Tuple[str, str]:
         )
 
         # Add a list item for each paper
+        filtered_papers = []
         for paper in papers:
             check_nonstandard_affiliations(paper)
             n_marked = mark_irya_affiliations(paper)
 
             if n_marked == 0:
                 print("Paper not included due to all irya authors being on drop list")
+                # Also remove this paper from the list, so it has no
+                # chance of showing up as the latest publication
+                papers.remove(paper)
                 continue
 
+            # Paper has passed the checks so add it to page and to
+            # list of filtered papers
             pub_list_page += format_paper(paper)
+            filtered_papers.append(paper)
 
             if paper.bibcode in DEBUG_BIBCODES:
                 print("*** DEBUG_BIBCODE", paper.bibcode)
@@ -308,7 +315,7 @@ def query_years(years: list) -> Tuple[str, str]:
         )
         # Also add latest publication to a separate page
         if year == this_year:
-            latest_pub_page += format_paper(papers[0])
+            latest_pub_page += format_paper(filtered_papers[0])
 
     # Close div with the main content
     pub_list_page += """\
