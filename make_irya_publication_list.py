@@ -68,6 +68,9 @@ irya_variants = [
 # date.
 drop_authors_after_dates = [
     ("Rodriguez-Gomez", "2022/09"),
+    ("Lora", "2022/09"),
+    ("Naranjo-Romero", "2022/09"),
+    ("Loughnane", "2022/09"),
     # ("Henney", "2022/04"),
 ]
 
