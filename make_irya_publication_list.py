@@ -25,6 +25,7 @@ import re
 from textwrap import dedent
 import html
 from typing import Tuple  # required for earlier python versions
+from collections import Counter
 
 # Third-party library
 # Install with "pip install ads"
@@ -35,6 +36,7 @@ from unidecode import unidecode
 PUB_LIST_FILE = "publication_list2.php"
 LATEST_PUB_FILE = "latest_publication2.php"
 DIAGNOSTIC_FILE = "nonstandard_variants.txt"
+JOURNAL_DATA_FILE = "journal_data.json"
 
 
 # Add bibcodes to this list in order to inspect for debugging purposes
@@ -228,7 +230,7 @@ function toggleAuthors(bibcode, numAuthors, longList) {
 """
 
 
-def query_years(years: list) -> Tuple[str, str]:
+def query_years(years: list) -> Tuple[str, str, dict]:
     """Execute all the queries and construct the pages"""
 
     pub_list_page = script_header
@@ -262,6 +264,7 @@ def query_years(years: list) -> Tuple[str, str]:
     <div class="tab-content span11">
     """
 
+    journals_by_year = {}
     for year in years:
         tab_pane = "tab-pane active" if year == this_year else "tab-pane"
         # Make a single ADS query for each year
@@ -287,6 +290,9 @@ def query_years(years: list) -> Tuple[str, str]:
             """
         )
 
+        # Initialise counter for journals
+        journal_counter = Counter()
+
         # Add a list item for each paper
         filtered_papers = []
         for paper in papers:
@@ -306,6 +312,9 @@ def query_years(years: list) -> Tuple[str, str]:
                 print("*** DEBUG_BIBCODE", paper.bibcode)
                 print(paper.items())
 
+            # Increment journal counter
+            journal_counter[paper.pub] += 1
+
         # Close the list and close the div for this year
         pub_list_page += dedent(
             """\
@@ -316,6 +325,8 @@ def query_years(years: list) -> Tuple[str, str]:
         # Also add latest publication to a separate page
         if year == this_year:
             latest_pub_page += format_paper(filtered_papers[0])
+        # Save this year's journal counter
+        journals_by_year[year] = journal_counter
 
     # Close div with the main content
     pub_list_page += """\
@@ -327,7 +338,7 @@ def query_years(years: list) -> Tuple[str, str]:
     </div>
     """
 
-    return pub_list_page, latest_pub_page
+    return pub_list_page, latest_pub_page, journals_by_year
 
 
 def dump_nonstandard():
@@ -371,13 +382,17 @@ if __name__ == "__main__":
     start_year = 2003
     this_year = datetime.date.today().year
     years = list(reversed(range(start_year, this_year + 1)))
-    pub_list_page, latest_pub_page = query_years(years)
+    pub_list_page, latest_pub_page, journal_data = query_years(years)
 
     # Write out the two files
     with open(f"{OUTPUT_FOLDER}/{PUB_LIST_FILE}", "w") as f:
         f.write(pub_list_page)
     with open(f"{OUTPUT_FOLDER}/{LATEST_PUB_FILE}", "w") as f:
         f.write(latest_pub_page)
+
+    # Write out the journal data
+    with open(f"{OUTPUT_FOLDER}/{JOURNAL_DATA_FILE}", "w") as f:
+        json.dump(journal_data, f, indent=4)
 
     if DO_SAVE_VARIANTS:
         dump_nonstandard()
