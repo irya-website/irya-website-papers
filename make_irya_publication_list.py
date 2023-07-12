@@ -10,11 +10,17 @@ Usage:
 
     make_irya_publication_list.py OUTPUT_FOLDER
 
+followed by
+
+    make_journal_histogram.py OUTPUT_FOLDER
+
+to generate the graphic files of the histograms. 
+
 Files will be written to OUTPUT_FOLDER
 
 See accompanying file README.md for further options.
 
-Authors: Will Henney and Jane Arthur, 2022
+Authors: Will Henney and Jane Arthur, 2022,2023
 """
 
 # Standard library imports
@@ -208,7 +214,8 @@ def format_paper(paper):
 
 
 # This javascript header goes at top of the files.  We believe it was
-# written by Vicente Rodríguez Gómez
+# written by Vicente Rodríguez Gómez.  Additional function by Jane
+# Arthur to hide/show the histogram graphics
 script_header = """\
 <script>
 function toggleAuthors(bibcode, numAuthors, longList) {
@@ -226,7 +233,19 @@ function toggleAuthors(bibcode, numAuthors, longList) {
     y.innerHTML = showLess;
   }
 };
+
+function plotHistogram(histname,buttonyear) {
+  var showImageButton = document.getElementById(buttonyear);
+  var myImage = document.getElementById(histname);
+  showImageButton.addEventListener("click", () => {
+      myImage.classList.toggle("visible");
+  });
+};
 </script>
+<style>
+      .hidden { display: none; }
+      .visible { display: block; }
+</style>
 """
 
 
@@ -281,11 +300,16 @@ def query_years(years: list) -> Tuple[str, str, dict]:
         # Remove MNRAS early publication papers from list
         papers = [_ for _ in papers if not ".tmp." in _.bibcode]
 
-        # Start a div for this year with list of papers
+        # Start a div for this year with list of papers and histogram graphic
         pub_list_page += dedent(
             f"""\
             <div class="{tab_pane}" id="{year}">
             <h4 style="text-indent: 10px;">Publications {year}</h4>
+            <button id="button-{year}">Histogram</button>
+            <img id="hist-{year}" src="journal_histogram_{year}.jpg" height="300" class="hidden">
+            <script>
+            plotHistogram("hist-{year}","button-{year}")
+            </script>
             <ol>      
             """
         )

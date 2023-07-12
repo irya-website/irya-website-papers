@@ -9,6 +9,8 @@ The output from this script can be seen [here.](https://www.irya.unam.mx/web/en/
 ```sh
 pip install ads
 pip install unidecode
+pip install seaborn
+pip install pandas
 ```
 
 ## Usage
