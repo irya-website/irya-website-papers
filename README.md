@@ -9,14 +9,13 @@ The output from this script can be seen [here.](https://www.irya.unam.mx/web/en/
 ```sh
 pip install ads
 pip install unidecode
-pip install seaborn
-pip install pandas
 ```
 
 ## Usage
 
 ```sh
-python make-irya-publication-list.py OUTPUT_FOLDER
+python make_irya_publication_list.py OUTPUT_FOLDER
+python make_journal_histogram.py OUTPUT_FOLDER
 ```
 where `OUTPUT_FOLDER` is where you want the files to be written.
 

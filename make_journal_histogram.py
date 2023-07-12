@@ -1,7 +1,4 @@
 from matplotlib import pyplot as plt
-import numpy as np
-import pandas as pd
-import seaborn as sns
 import json
 import sys
 from collections import Counter
@@ -35,12 +32,12 @@ for year, count_data in data.items():
             count_dict["Other"] += count
 
     print(year, count_dict)
-    df = pd.DataFrame.from_dict(count_dict, orient="index", columns=["count"])
-    print(df)
     # Make the plot
     fig, ax = plt.subplots(figsize=(4, 3))
-    sns.set_color_codes("deep")
-    sns.barplot(y="index", x="count", data=df.reset_index(), ax=ax, color="b")
+    labels = list(count_dict.keys())
+    label_positions = range(len(labels))[::-1]
+    counts = list(count_dict.values())
+    ax.barh(label_positions, counts, tick_label=labels)
     ax.set_xlabel("Number of publications")
     ax.set_ylabel("Journal")
     ax.set_xlim(0, MAX_COUNT)
@@ -54,7 +51,9 @@ for year, count_data in data.items():
         zorder=100,
         fontsize="xx-large",
     )
-    sns.despine()
+    for side in "top", "right":
+        ax.spines[side].set_visible(False)
+
     plotfile = f"{folder}/journal_histogram_{year}.jpg"
     fig.savefig(plotfile, bbox_inches="tight", dpi=150)
     plt.close(fig)
