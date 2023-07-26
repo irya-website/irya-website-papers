@@ -37,7 +37,8 @@ for year, count_data in data.items():
     labels = list(count_dict.keys())
     label_positions = range(len(labels))[::-1]
     counts = list(count_dict.values())
-    ax.barh(label_positions, counts, tick_label=labels)
+    bars = ax.barh(label_positions, counts, tick_label=labels)
+    ax.bar_label(bars, fmt=" %d")
     ax.set_xlabel("Number of publications")
     ax.set_ylabel("Journal")
     ax.set_xlim(0, MAX_COUNT)
@@ -50,6 +51,16 @@ for year, count_data in data.items():
         va="bottom",
         zorder=100,
         fontsize="xx-large",
+    )
+    ax.text(
+        0.9,
+        0.03,
+        f"Total: {sum(counts)}",
+        transform=ax.transAxes,
+        ha="right",
+        va="bottom",
+        zorder=100,
+        fontsize="medium",
     )
     for side in "top", "right":
         ax.spines[side].set_visible(False)
