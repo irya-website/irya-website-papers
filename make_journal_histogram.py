@@ -38,7 +38,9 @@ for year, count_data in data.items():
     label_positions = range(len(labels))[::-1]
     counts = list(count_dict.values())
     bars = ax.barh(label_positions, counts, tick_label=labels)
-    ax.bar_label(bars, fmt=" %d")
+    for y, x in zip(label_positions, counts):
+        ax.text(x, y, f" {x}", va="center")
+    # ax.bar_label(bars, fmt=" %d")
     ax.set_xlabel("Number of publications")
     ax.set_ylabel("Journal")
     ax.set_xlim(0, MAX_COUNT)

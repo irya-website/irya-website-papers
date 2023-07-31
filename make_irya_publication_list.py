@@ -239,6 +239,7 @@ function plotHistogram(histname,buttonyear) {
   var myImage = document.getElementById(histname);
   showImageButton.addEventListener("click", () => {
       myImage.classList.toggle("visible");
+      myImage.classList.toggle("hidden");
   });
 };
 </script>
@@ -306,7 +307,7 @@ def query_years(years: list) -> Tuple[str, str, dict]:
             <div class="{tab_pane}" id="{year}">
             <h4 style="text-indent: 10px;">Publications {year}</h4>
             <button id="button-{year}">Histogram</button>
-            <img id="hist-{year}" src="journal_histogram_{year}.jpg" height="300" class="hidden">
+            <img id="hist-{year}" src="sync_files/journal_histogram_{year}.jpg" height="300" class="hidden">
             <script>
             plotHistogram("hist-{year}","button-{year}")
             </script>
