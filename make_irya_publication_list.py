@@ -234,19 +234,16 @@ function toggleAuthors(bibcode, numAuthors, longList) {
   }
 };
 
-function plotHistogram(histname,buttonyear) {
-  var showImageButton = document.getElementById(buttonyear);
-  var myImage = document.getElementById(histname);
-  showImageButton.addEventListener("click", () => {
-      myImage.classList.toggle("visible");
-      myImage.classList.toggle("hidden");
-  });
-};
+/* WJH 2023-07-31: simpler function for turning visibility on/off */ 
+function toggleVisibility(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 </script>
-<style>
-      .hidden { display: none; }
-      .visible { display: block; }
-</style>
 """
 
 
@@ -306,11 +303,8 @@ def query_years(years: list) -> Tuple[str, str, dict]:
             f"""\
             <div class="{tab_pane}" id="{year}">
             <h4 style="text-indent: 10px;">Publications {year}</h4>
-            <button id="button-{year}">Histogram</button>
-            <img id="hist-{year}" src="sync_files/journal_histogram_{year}.jpg" height="300" class="hidden">
-            <script>
-            plotHistogram("hist-{year}","button-{year}")
-            </script>
+            <button onclick="toggleVisibility('hist-{year}')">Histogram</button>
+            <img id="hist-{year}" src="sync_files/journal_histogram_{year}.jpg" height="300" style="display:none;">
             <ol>      
             """
         )
