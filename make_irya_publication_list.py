@@ -82,6 +82,12 @@ drop_authors_after_dates = [
     # ("Henney", "2022/04"),
 ]
 
+# List of bibcode components for publications that we want to exclude
+drop_pub_types = [
+    ".tmp",                     # MNRAS early publication
+    ".conf",                    # Conference proceedings
+]
+
 # All except the first 3 variants are mis-spellings, about which we
 # may want to report diagnostics
 nonstandard_variants = irya_variants[3:]
@@ -139,6 +145,13 @@ def check_drop_author_on_date(author, date):
     # Case that author should not be dropped
     return False
 
+def check_for_excluded_pubs(bibcode):
+    """True if bibcode matches list of publications to drop"""
+    for s in drop_pub_types:
+        if s in bibcode:
+            return True
+    return False
+    
 
 def mark_irya_affiliations(paper):
     """Highlight authors with IRyA affiliation
@@ -208,7 +221,11 @@ def format_paper(paper):
     rslt = "<li><p>\n"
     rslt += bibcode_link
     rslt += "<br/>\n" + author_list + "\n<br/>\n"
-    rslt += ", ".join([year_month, paper.pub, paper.volume, paper.page[0]]) + "\n"
+    try:
+        rslt += ", ".join([year_month, paper.pub, paper.volume, paper.page[0]]) + "\n"
+    except TypeError:
+        # Case where volume is missing
+        rslt += ", ".join([year_month, paper.pub, paper.page[0]]) + "\n"
     rslt += "</p></li>\n"
     return rslt
 
@@ -295,8 +312,11 @@ def query_years(years: list) -> Tuple[str, str, dict]:
                 sort="date+desc",
             )
         )
-        # Remove MNRAS early publication papers from list
-        papers = [_ for _ in papers if not ".tmp." in _.bibcode]
+        
+        # Remove unwanted publications
+        # For instance, MNRAS early access, or conference proceedings
+        papers = [_ for _ in papers if not check_for_excluded_pubs(_.bibcode)]
+        
 
         # Start a div for this year with list of papers and histogram graphic
         pub_list_page += dedent(
