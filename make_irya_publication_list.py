@@ -252,14 +252,15 @@ function toggleAuthors(bibcode, numAuthors, longList) {
 };
 
 /* WJH 2023-07-31: simpler function for turning visibility on/off */ 
-function toggleVisibility(id) {
+
+/*function toggleVisibility(id) {
   var x = document.getElementById(id);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
-}
+}*/
 </script>
 """
 
@@ -272,19 +273,28 @@ def query_years(years: list) -> Tuple[str, str, dict]:
 
     # Start outer div
     pub_list_page += """\
-    <div class="row-fluid">
+    <div class="row">
     """
 
     # Make navigation sidebar with links for each year
     pub_list_page += """\
-    <div id="sidebar" class="span1">
-    <ul class="nav nav-pills nav-stacked mod-list">
+    <div class="dropdown col-4">
+        <button id="dyears" class="btn btn-sm btn-light text-sm" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Selecciona un año <em>(select a year)</em> <i class="fas fa-angle-down ml-4"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dyears" role="tablist">
     """
 
     for year in years:
+        active = "active" if year == this_year else ""
         pub_list_page += (
-            f'<li style="width: 58px;"><a href="#{year}" data-toggle="pill">{year}</a></li>'
-            + "\n"
+            f"""\
+                <li role="presentation">
+                    <button class="dropdown-item {active}" id="{year}-tab" data-bs-toggle="tab" data-bs-target="#P{year}" type="button"
+                    role="tab" aria-controls="P{year}" aria-selected="true">{year}</button>
+                </li>
+            """+ "\n"
         )
 
     # End navigation sidebar
@@ -295,12 +305,12 @@ def query_years(years: list) -> Tuple[str, str, dict]:
 
     # Start div with the main content
     pub_list_page += """\
-    <div class="tab-content span11">
+    <div class="tab-content publicaciones">
     """
 
     journals_by_year = {}
     for year in years:
-        tab_pane = "tab-pane active" if year == this_year else "tab-pane"
+        tab_pane = "tab-pane fade show active" if year == this_year else "tab-pane fade"
         # Make a single ADS query for each year
         papers = list(
             ads.SearchQuery(
@@ -321,10 +331,21 @@ def query_years(years: list) -> Tuple[str, str, dict]:
         # Start a div for this year with list of papers and histogram graphic
         pub_list_page += dedent(
             f"""\
-            <div class="{tab_pane}" id="{year}">
-            <h4 style="text-indent: 10px;">Publications {year}</h4>
-            <button onclick="toggleVisibility('hist-{year}')">Histogram</button>
-            <img id="hist-{year}" src="sync_files/journal_histogram_{year}.jpg" height="300" style="display:none;">
+            <div class="{tab_pane}" id="P{year}" role="tabpanel" aria-labelledby="{year}-tab">
+                <div class="row row-header">
+                    <h3>Publications {year}</h3>
+                    <div class="div.col-2">
+                        <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#hist-{year}" aria-expanded="false" aria-controls="hist-{year}">
+                            Histogram
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="collapse" id="hist-{year}">
+                    <div class="histogram">
+                        <img id="hist-{year}" src="sync_files/journal_histogram_{year}.jpg" height="300">
+                    </div>
+                </div>            
             <ol>      
             """
         )
