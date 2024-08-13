@@ -1,4 +1,8 @@
-# Publication list for IRyA website
+# Utility scripts to help maintain the IRyA web pages
+
+# Colloquia list 
+
+# Publication list 
 
 Python script that uses ADS to construct web page with lists of refereed publications by researchers from the Instituto de Radioastronomía y Astrofísica, Universidad Nacional Autónoma de México.
 
