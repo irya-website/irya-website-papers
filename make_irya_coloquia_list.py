@@ -47,9 +47,11 @@ def query_years(df,years):
     # construct the web pages
     coll_list_page_en = ""
     upcoming_coll_page_en = ""
+    prev_coll_format_en = ""
 
     coll_list_page_es = ""
     upcoming_coll_page_es = ""
+    prev_coll_format_es = ""
 
 
     
@@ -113,7 +115,7 @@ def query_years(df,years):
     coll_list_page_es = dropdown_menu_es + "\n"
 
     
-    #Inicialize content-tabs
+    #Initialize content-tabs
     coll_list_page_en += f"""<div class="tab-content mt-3">"""+"\n"
     coll_list_page_es += f"""<div class="tab-content mt-3">"""+"\n"
     
@@ -149,16 +151,22 @@ def query_years(df,years):
             this_coll_format_es = createEntry_es(coll)
             coll_list_page_en += this_coll_format_en
             coll_list_page_es += this_coll_format_es
-
+            
             # identify upcoming colloquium
             cyr,cmth,cday = coll[0].split('/')
 #DEBUG            print('cyr ',cyr,' cmth ',cmth,' cday ',cday)
             if F_NEXT_COLL :
-                if int(cyr) <= int(today_yr) and int(cmth) <= int(today_mth) and int(cday) < int(today_day) :
-                    upcoming_coll_page_en += prev_coll_format_en
-                    upcoming_coll_page_es += prev_coll_format_es
+                upcoming_coll_page_en = prev_coll_format_en
+                upcoming_coll_page_es = prev_coll_format_es
+                if int(cyr) < int(today_yr) :
                     F_NEXT_COLL = False
-
+                else :
+                    if int(cmth) < int(today_mth) :
+                        F_NEXT_COLL = False
+                    else :
+                        if int(cday) < int(today_day) :
+                            F_NEXT_COLL = False
+                            
             prev_coll_format_en = this_coll_format_en
             prev_coll_format_es = this_coll_format_es
                          
