@@ -158,15 +158,12 @@ def query_years(df,years):
             if F_NEXT_COLL :
                 upcoming_coll_page_en = prev_coll_format_en
                 upcoming_coll_page_es = prev_coll_format_es
-                if int(cyr) < int(today_yr) :
+
+                str_coll = cyr+cmth+cday
+                str_today = str(today_yr).zfill(4)+str(today_mth).zfill(2)+str(today_day).zfill(2)
+                if int(str_coll) < int(str_today) :
                     F_NEXT_COLL = False
-                else :
-                    if int(cmth) < int(today_mth) :
-                        F_NEXT_COLL = False
-                    else :
-                        if int(cday) < int(today_day) :
-                            F_NEXT_COLL = False
-                            
+
             prev_coll_format_en = this_coll_format_en
             prev_coll_format_es = this_coll_format_es
                          
